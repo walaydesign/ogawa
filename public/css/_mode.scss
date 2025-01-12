@@ -11,6 +11,71 @@ body {
         }
         .header {
             background-color: #fff;
+            &_menu {
+                .bar {
+                    background-color: $primary-400;
+                }
+            }
+            &_nav {
+                background-color: #fff;
+                &_info {
+                    background-color: $primary-50;
+                    h3 {
+                        color: $primary-900;
+                    }
+                    li {
+                        p {
+                            color: $text;
+                        }
+                    }
+                    &_icon {
+                        border-color: $primary-500;
+                        svg {
+                            path {
+                                fill: $primary-500
+                            }
+                        }
+                    }
+                }
+                &_list {
+                    li {
+                        >a {
+                            border-color: $third-50;
+                            span {
+                                color: $text;
+                            }
+                        }
+                    }
+                    &_icon {
+                        path {
+                            fill: $primary-800;
+                        }
+                    }
+                    &_arrow {
+                        path {
+                            stroke: $primary-800;
+                        }
+                    }
+                }
+                &_mode {
+                    background-color: $primary-50;
+                    &_icon {
+                        path {
+                            fill: $primary-900;
+                        }
+                    }
+                    &_text {
+                        span {
+                            color: $text;
+                        }
+                    }
+                    &_arrow {
+                        path {
+                            stroke: $primary-800;
+                        }
+                    }
+                }
+            }
         }
         .login {
             h1 {
@@ -45,6 +110,68 @@ body {
             background-color: #fff;
             color: $gray-600;
         }
+        .home-title {
+            color: $text;
+            border-color: $gray-100;
+        }
+        .sum {
+            &_num {
+                color: $primary-800;
+            }
+        }
+        .announce {
+            &_item {
+                &::after {
+                    background-color: $third-50;
+                }
+                &.notread {
+                    background-color: $secondary-100;
+                    .announce {
+                        &_text {
+                            h3 {
+                                color: $text;
+                            }
+                        }
+                        &_tag {
+                            border-color: $primary-400;
+                            background-color: $primary-400;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            &_tag {
+                border-color: $primary-50;
+                background-color: $primary-50;
+                color: $primary-800;
+            }
+            &_arrow {
+                path {
+                    stroke: $secondary-700;
+                }
+            }
+        }
+        .navigation {
+            background-color: $primary-50;
+            &_icon {
+                &_normal {
+                    path {
+                        fill: $third-400;
+                    }
+                }
+            }
+            &_item {
+                span {
+                    color: $third-400;
+                }
+                &.active {
+                    span {
+                        color: $primary-900;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
     }
     &.dark-mode {
         background-color: #000;
@@ -58,6 +185,71 @@ body {
         }
         .header {
             background-color: $text;
+            &_menu {
+                .bar {
+                    background-color: $white;
+                }
+            }
+            &_nav {
+                background-color: #000;
+                &_info {
+                    background-color: $gray-900;
+                    h3 {
+                        color: $white;
+                    }
+                    li {
+                        p {
+                            color: $white;
+                        }
+                    }
+                    &_icon {
+                        border-color: $gray-300;
+                        svg {
+                            path {
+                                fill: $gray-300
+                            }
+                        }
+                    }
+                }
+                &_list {
+                    li {
+                        >a {
+                            border-color: $gray-900;
+                            span {
+                                color: $white;
+                            }
+                        }
+                    }
+                    &_icon {
+                        path {
+                            fill: $gray-400;
+                        }
+                    }
+                    &_arrow {
+                        path {
+                            stroke: $gray-400;
+                        }
+                    }
+                }
+                &_mode {
+                    background-color: $gray-900;
+                    &_icon {
+                        path {
+                            fill: $gray-400;
+                        }
+                    }
+                    &_text {
+                        span {
+                            color: $white;
+                        }
+                    }
+                    &_arrow {
+                        path {
+                            stroke: $gray-400;
+                        }
+                    }
+                }
+            }
         }
         .login {
             h1 {
@@ -91,6 +283,79 @@ body {
         .footer {
             background-color: $text;
             color: $gray-300;
+        }
+        .home-title {
+            color: $white;
+            border-color: $gray-900;
+        }
+        .sum {
+            &_num {
+                color: $white;
+            }
+        }
+        .announce {
+            &_item {
+                &::after {
+                    background-color: $gray-900;
+                }
+                &.notread {
+                    background-color: $gray-800;
+                    .announce {
+                        &_text {
+                            h3 {
+                                color: $white;
+                            }
+                        }
+                        &_tag {
+                            border-color: $gray-400;
+                            background-color: transparent;
+                            color: $gray-300;
+                        }
+                        &_arrow {
+                            path {
+                                stroke: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            &_tag {
+                border-color: $gray-900;
+                background-color: $gray-900;
+                color: $gray-300;
+            }
+            &_arrow {
+                path {
+                    stroke: $gray-50;
+                }
+            }
+            &_text {
+                h3 {
+                    color: $white;
+                }
+            }
+        }
+        .navigation {
+            background-color: $gray-800;
+            &_icon {
+                &_normal {
+                    path {
+                        fill: $gray-300;
+                    }
+                }
+            }
+            &_item {
+                span {
+                    color: $gray-300;
+                }
+                &.active {
+                    span {
+                        background: $gradient;
+                        background-clip: text;
+                        color: transparent;
+                    }
+                }
+            }
         }
     }  
 }
