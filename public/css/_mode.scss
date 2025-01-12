@@ -1,0 +1,96 @@
+body {
+    &.light-mode {
+        background-color: #fff;
+        .mode-pic {
+            &.lightMode {
+                display: block;
+            }
+            &.darkMode {
+                display: none;
+            }
+        }
+        .header {
+            background-color: #fff;
+        }
+        .login {
+            h1 {
+                color: $primary-900;
+            }
+            &_input {
+                border-color: $gray-300;
+                svg {
+                    path {
+                        fill: $primary-500;
+                    }
+                }
+                &::before {
+                    background-color: $gray-300;
+                }
+                input {
+                    &::placeholder {
+                        color: $gray-300;
+                    }                    
+                }
+            }
+            &_line {
+                &::after {
+                    background-color: #C9DCD1;
+                }
+                >p {
+                    background-color: $white;
+                }
+            }
+        }
+        .footer {
+            background-color: #fff;
+            color: $gray-600;
+        }
+    }
+    &.dark-mode {
+        background-color: #000;
+        .mode-pic {
+            &.lightMode {
+                display: none;
+            }
+            &.darkMode {
+                display: block;
+            }
+        }
+        .header {
+            background-color: $text;
+        }
+        .login {
+            h1 {
+                color: $white;
+            }
+            &_input {
+                border-color: $gray-800;
+                svg {
+                    path {
+                        fill: $white;
+                    }
+                }
+                &::before {
+                    background-color: $gray-800;
+                }
+                input {
+                    &::placeholder {
+                        color: $gray-800;
+                    }                    
+                }
+            }
+            &_line {
+                &::after {
+                    background-color: rgba(201, 220, 209, 0.38);
+                }
+                >p {
+                    background-color: #000;
+                }
+            }
+        }
+        .footer {
+            background-color: $text;
+            color: $gray-300;
+        }
+    }  
+}

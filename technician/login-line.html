@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小川職人後台系統</title>
+    <meta name="color-scheme" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../public/css/fullcalendar/main.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <header class="header">
+            <div class="header_logo">
+                <img class="mode-pic lightMode" src="../public/img/logo-blue.png" alt="">
+                <img class="mode-pic darkMode" src="../public/img/logo-white.png" alt="">
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="login">
+                <div class="login_title">
+                    <h1 class="mb-2">小川職人管理系統</h1>
+                    <div class="login_line"><p>Line登入</p></div>
+                </div>
+                
+                <div class="login_input">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.99696 8.47683C5.98192 8.47683 4.34192 6.83683 4.34192 4.82179C4.34192 2.80675 5.98192 1.16675 7.99696 1.16675C10.012 1.16675 11.652 2.80675 11.652 4.82179C11.652 6.83683 10.012 8.47683 7.99696 8.47683ZM7.99696 2.12024C6.50952 2.12024 5.29541 3.33435 5.29541 4.82179C5.29541 6.30923 6.50952 7.52334 7.99696 7.52334C9.4844 7.52334 10.6985 6.30923 10.6985 4.82179C10.6985 3.33435 9.4844 2.12024 7.99696 2.12024Z" fill="#3BA5D7"/>
+                        <path d="M13.4574 14.8335C13.1968 14.8335 12.9806 14.6174 12.9806 14.3568C12.9806 12.1638 10.7432 10.3839 7.99714 10.3839C5.25106 10.3839 3.01355 12.1638 3.01355 14.3568C3.01355 14.6174 2.79742 14.8335 2.5368 14.8335C2.27618 14.8335 2.06006 14.6174 2.06006 14.3568C2.06006 11.6425 4.72346 9.43042 7.99714 9.43042C11.2708 9.43042 13.9341 11.6425 13.9341 14.3568C13.9341 14.6174 13.718 14.8335 13.4574 14.8335Z" fill="#3BA5D7"/>
+                    </svg>
+                    <input type="text" placeholder="帳號">
+                </div>
+                <div class="login_input">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8.97729C8.27613 8.97729 8.5 9.19221 8.5 9.4573V10.7373C8.5 11.0024 8.27613 11.2173 8 11.2173C7.72387 11.2173 7.5 11.0024 7.5 10.7373V9.4573C7.5 9.19221 7.72387 8.97729 8 8.97729Z" fill="#2198CE"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99996 6.41728C6.95089 6.41728 5.99923 6.43884 5.06269 6.48019C4.19003 6.51872 3.45949 7.17369 3.34069 8.02067C3.24378 8.71174 3.16663 9.40153 3.16663 10.0973C3.16663 10.793 3.24378 11.4828 3.34069 12.1739C3.45949 13.0209 4.19003 13.6758 5.06269 13.7144C5.99923 13.7557 6.95089 13.7773 7.99996 13.7773C9.04903 13.7773 10.0007 13.7557 10.9372 13.7144C11.8099 13.6758 12.5404 13.0209 12.6592 12.1739C12.7562 11.4828 12.8333 10.793 12.8333 10.0973C12.8333 9.40153 12.7562 8.71174 12.6592 8.02067C12.5404 7.17369 11.8099 6.51872 10.9372 6.48019C10.0007 6.43884 9.04903 6.41728 7.99996 6.41728ZM5.01677 5.5212C5.96905 5.47918 6.93609 5.45728 7.99996 5.45728C9.06383 5.45728 10.0309 5.47918 10.9832 5.5212C12.3552 5.58176 13.4692 6.60172 13.6503 7.8926C13.749 8.59686 13.8333 9.33683 13.8333 10.0973C13.8333 10.8577 13.749 11.5977 13.6503 12.3019C13.4692 13.5928 12.3552 14.6128 10.9832 14.6733C10.0309 14.7154 9.06383 14.7373 7.99996 14.7373C6.93609 14.7373 5.96905 14.7154 5.01677 14.6733C3.64473 14.6128 2.53069 13.5928 2.34964 12.3019C2.25087 11.5977 2.16663 10.8577 2.16663 10.0973C2.16663 9.33683 2.25087 8.59686 2.34964 7.8926C2.53069 6.60172 3.64473 5.58176 5.01677 5.5212Z" fill="#2198CE"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 1.93729C6.61929 1.93729 5.5 3.01181 5.5 4.33729V5.93729C5.5 6.20239 5.27614 6.41729 5 6.41729C4.72385 6.41729 4.5 6.20239 4.5 5.93729V4.33729C4.5 2.48161 6.067 0.977295 7.99999 0.977295C9.93299 0.977295 11.5 2.48161 11.5 4.33729V5.93729C11.5 6.20239 11.2761 6.41729 11 6.41729C10.7239 6.41729 10.5 6.20239 10.5 5.93729V4.33729C10.5 3.01181 9.38073 1.93729 7.99999 1.93729Z" fill="#2198CE"/>
+                    </svg>
+                    <input type="password" placeholder="密碼">
+                </div>
+                <button class="btn-bg-brown">登入</button>
+                <div class="login_pic">
+                    <img class="mode-pic lightMode" src="../public/img/login-pic.png" alt="">
+                    <img class="mode-pic darkMode" src="../public/img/login-pic-dark.png" alt="">
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            版權所有©2024 小川職人
+        </footer>
+
+    </div>
+    <button id="color-scheme-toggle" onclick="toggleColorMode()" style="background-color: #fff; border:1px solid #000;">
+        <span id="toggle-icon" class="material-icons">dark_mode</span>
+        <span id="toggle-text">Switch to Dark Theme</span>
+    </button>
+
+    <script src="../public/js/jquery/jquery.min.js"></script>
+    <script src="../public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="../public/js/fullcalendar/main.js"></script>
+    <script src="../public/js/common.js"></script>
+</body>
+</html>
