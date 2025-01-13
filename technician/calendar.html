@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小川職人後台系統</title>
+    <meta name="color-scheme" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../public/css/fullcalendar/main.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <header class="header">
+            <div class="header_title">
+                <div class="header_back">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="#004F74" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h1>休假表</h1>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="inner">
+                <div id="calendar"></div>
+                <div class="calendar-list">
+                    <div class="calendar-list_item">
+                        <div class="calendar-list_date">05</div>
+                        <div class="calendar-list_text">
+                            <p class="calendar-list_day">星期四</p>
+                            <p class="calendar-list_reason">休（颱風假）</p>
+                        </div>
+                    </div>
+                    <div class="calendar-list_item">
+                        <div class="calendar-list_date">04</div>
+                        <div class="calendar-list_text">
+                            <p class="calendar-list_day">星期四</p>
+                            <p class="calendar-list_reason">休（颱風假）</p>
+                        </div>
+                    </div>
+                    <div class="calendar-list_item">
+                        <div class="calendar-list_date">03</div>
+                        <div class="calendar-list_text">
+                            <p class="calendar-list_day">星期四</p>
+                            <p class="calendar-list_reason">休（颱風假）</p>
+                        </div>
+                    </div>
+                    <div class="calendar-list_item">
+                        <div class="calendar-list_date">02</div>
+                        <div class="calendar-list_text">
+                            <p class="calendar-list_day">星期四</p>
+                            <p class="calendar-list_reason">休（颱風假）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                版權所有©2024 小川職人
+            </footer>
+        </main>
+
+    </div>
+
+    <script src="../public/js/jquery/jquery.min.js"></script>
+    <script src="../public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="../public/js/fullcalendar/main.js"></script>
+    <script src="../public/js/common.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var calendarEl = document.getElementById("calendar");
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            locale: 'zh-tw',
+            initialView: "dayGridMonth",
+            headerToolbar: {
+              left: "prev",
+              center: "title",
+              right: "next",
+            },
+            events: [
+                { title: "休", start: "2025-01-01", end: "2025-01-06" ,color:"#FF7631" },
+                { title: "颱風假", start: "2025-01-10", end: "2025-01-16" ,color:"#FFB71B" },
+                { title: "必休", start: "2025-01-20", end: "2025-01-26" ,color:"#E30A0A" },
+            ],
+            height:400,
+          });
+          calendar.render();
+        });
+      </script>
+</body>
+</html>

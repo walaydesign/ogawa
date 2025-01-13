@@ -1,0 +1,107 @@
+.factory {
+    &_country {
+        margin-bottom: 30px;
+    }
+    &_title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        >img {
+            width: 24px;
+        }
+        h2 {
+            padding-left: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+    &_list {
+        &_item {
+            padding: 15px 20px;
+            border-radius: 17px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        &_text {
+            width: calc(100% - 70px);
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                margin: 0;
+            }
+        }
+        &_brand {
+            width: 65px;
+            height: 30px;
+            border-radius: 6px;
+            border: 1px solid $third-100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            background-color: #fff;
+            >img {
+                max-width: 55px;
+                max-height: 20px;
+            }
+        }
+        &_icon {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70px;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                svg {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
+
+.modal-call {
+    .factory_list_brand {
+        margin-bottom: 0;
+    }
+    &_item {
+        padding: 13px 0;
+        border-bottom: 1px solid;
+        display: flex;
+        align-items: center;
+    }
+    &_text {
+        width: calc(100% - 30px);
+        display: flex;
+        align-items: center;
+    }
+    &_store {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+    }
+    &_num {
+        margin-left: 15px;
+        margin-bottom: 0;
+    }
+    &_icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

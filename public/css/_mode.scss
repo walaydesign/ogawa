@@ -1,6 +1,7 @@
 body {
     &.light-mode {
         background-color: #fff;
+        color: $text;
         .mode-pic {
             &.lightMode {
                 display: block;
@@ -73,6 +74,25 @@ body {
                         path {
                             stroke: $primary-800;
                         }
+                    }
+                }
+            }
+            &_title {
+                h1 {
+                    color: $primary-900;
+                }
+            }
+            &_back {
+                svg {
+                    path {
+                        stroke: $primary-900;                    }
+
+                }
+            }
+            &_icon {
+                svg {
+                    path {
+                        fill: $primary-600;
                     }
                 }
             }
@@ -150,6 +170,11 @@ body {
                     stroke: $secondary-700;
                 }
             }
+            &-detail {
+                &_main {
+                    color: $gray-900;
+                }
+            }
         }
         .navigation {
             background-color: $primary-50;
@@ -172,9 +197,181 @@ body {
                 }
             }
         }
+        #calendar {
+            .fc-prev-button, .fc-next-button {
+                background-color: $secondary-50;
+                .fc-icon {
+                    color: $primary-900;
+                }
+            }
+            .fc-col-header-cell-cushion {
+                color: #fff;
+            }
+            .fc-col-header-cell.fc-day {
+                background-color: $secondary-500;
+            }
+            .fc-daygrid-day-number {
+                color: $gray-800;
+            }
+            .fc-daygrid-day.fc-day.fc-day-today {
+                background-color: $secondary-50;
+            }
+            .fc-daygrid-day, .fc-scrollgrid, tr, td {
+                border-color: $gray-200;
+            }
+        }
+        .calendar {
+            &-list {
+                &_item {
+                    border-color: $third-50;
+                }
+                &_date {
+                    background-color: $primary-50;
+                    color: $primary-900;
+                }
+                &_day {
+                    color: $gray-600;
+                }
+                &_reason {
+                    color: $gray-800;
+                }
+            }
+        }
+        .num-box {
+            &_btn {
+                background-color: $primary-50;
+                svg {
+                    path {
+                        stroke: $primary-900;
+                    }
+                }
+            }
+        }
+        .buy {
+            &_uniform {
+                border-color: $third-200;
+                h2 {
+                    border-color: $third-50;
+                    color: $primary-900;
+                }
+            }
+            &-remark {
+                h2 {
+                    color: $primary-900;
+                }
+                ol {
+                    li {
+                        color: $gray-600;
+                    }
+                }
+            }
+            &-record {
+                background-color: #fff;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                &_info {
+                    border-color: $third-50;
+                }
+                &_date {
+                    color: $primary-900;
+                }
+                &_status {
+                    color: $primary-600;
+                }
+            }
+        }
+        .fixed-bottom {
+            background-color: $white;
+            border-color: $third-100;
+        }
+        .send {
+            svg {
+                path {
+                    fill: $third-400;
+                }
+            }
+        }
+        .factory {
+            &_title {
+                h2 {
+                    color: $primary-900;
+                }
+            }
+            &_list {
+                &_item {
+                    background-color: #fff;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                }
+                &_text {
+                    h3 {
+                        color: $gray-900;
+                    }
+                }
+                &_icon {
+                    a {
+                        background-color: $primary-50;
+                        svg {
+                            path {
+                                fill: $primary-500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .modal-common {
+            .modal-content {
+                background-color: #fff;
+            }
+            .modal-header {
+                border-color: $gray-200;
+                h4 {
+                    color: $gray-900;
+                }
+            }
+        }
+        .modal-call {
+            &_item {
+                border-color: $gray-100;
+            }
+            &_store {
+                color: $gray-900;
+            }
+            &_num {
+                color: $gray-600;
+            }
+            &_icon {
+                background-color: $primary-50;
+                svg {
+                    path {
+                        fill: $primary-400;
+                    }
+                }
+            }
+        }
+        .notify {
+            &_item {
+                &::after {
+                    background-color: $gray-200;
+                }
+                &.notread {
+                    background-color: $secondary-50;
+                }
+            }
+            &_text {
+                h2 {
+                    color: $gray-900;
+                }
+            }
+            &_arrow {
+                path {
+                    stroke: $secondary-700;
+                }
+            }
+        }
     }
     &.dark-mode {
         background-color: #000;
+        color: $white;
         .mode-pic {
             &.lightMode {
                 display: none;
@@ -247,6 +444,25 @@ body {
                         path {
                             stroke: $gray-400;
                         }
+                    }
+                }
+            }
+            &_title {
+                h1 {
+                    color: $white;
+                }
+            }
+            &_back {
+                svg {
+                    path {
+                        stroke: $white;                    
+                    }
+                }
+            }
+            &_icon {
+                svg {
+                    path {
+                        fill: $gray-200;
                     }
                 }
             }
@@ -334,6 +550,11 @@ body {
                     color: $white;
                 }
             }
+            &-detail {
+                &_main {
+                    color: $gray-400;
+                }
+            }
         }
         .navigation {
             background-color: $gray-800;
@@ -357,5 +578,177 @@ body {
                 }
             }
         }
+        #calendar {
+            .fc-prev-button, .fc-next-button {
+                background-color: $gray-900;
+                .fc-icon {
+                    color: $gray-400;
+                }
+            }
+            .fc-col-header-cell.fc-day {
+                background-color: $gray-900;
+            }
+            .fc-daygrid-day-number {
+                color: $gray-300;
+            }
+            .fc-daygrid-day.fc-day.fc-day-today {
+                background-color: $gray-800;
+            }
+            .fc-daygrid-day, .fc-scrollgrid, tr, td{
+                border-color: $gray-800 !important;
+            }
+        }
+        .calendar {
+            &-list {
+                &_item {
+                    border-color: $gray-900;
+                }
+                &_date {
+                    background-color: $gray-900;
+                    color: $white;
+                }
+                &_day {
+                    color: $gray-400;
+                }
+                &_reason {
+                    color: $white;
+                }
+            }
+        }
+        .num-box {
+            &_btn {
+                background-color: $gray-900;
+                svg {
+                    path {
+                        stroke: $gray-400;
+                    }
+                }
+            }
+        }
+        .buy {
+            &_uniform {
+                border-color: $gray-900;
+                h2 {
+                    border-color: $gray-900;
+                    color: $white;
+                }
+            }
+            &-remark {
+                h2 {
+                    color: $white;
+                }
+                ol {
+                    li {
+                        color: $gray-400;
+                    }
+                }
+            }
+            &-record {
+                background-color: $gray-900;
+                box-shadow: none;
+                &_info {
+                    border-color: $gray-800;
+                }
+                &_date {
+                    color: $gray-500;
+                }
+                &_status {
+                    color: $gray-500;
+                }
+            }
+        }
+        .fixed-bottom {
+            background-color: #000;
+            border-color: $gray-900;
+        }
+        .inner {
+            background-color: #000 !important;
+        }
+        .send {
+            svg {
+                path {
+                    fill: $gray-800;
+                }
+            }
+        }
+        .factory {
+            &_title {
+                h2 {
+                    color: $white;
+                }
+            }
+            &_list {
+                &_item {
+                    background-color: $gray-900;
+                    box-shadow: none;
+                }
+                &_text {
+                    h3 {
+                        color: $gray-400;
+                    }
+                }
+                &_icon {
+                    a {
+                        background-color: $gray-800;
+                        svg {
+                            path {
+                                fill: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .modal-common {
+            .modal-content {
+                background-color: $gray-900;
+            }
+            .modal-header {
+                border-color: $gray-800;
+                h4 {
+                    color: $white;
+                }
+            }
+        }
+        .modal-call {
+            &_item {
+                border-color: $gray-800;
+            }
+            &_store {
+                color: $white;
+            }
+            &_num {
+                color: $gray-400;
+            }
+            &_icon {
+                background-color: $gray-800;
+                svg {
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+        .notify {
+            &_item {
+                &::after {
+                    background-color: $gray-900;
+                }
+                &.notread {
+                    background-color: $gray-800;
+                }
+            }
+            &_text {
+                h2 {
+                    color: $white;
+                }
+            }
+            &_arrow {
+                path {
+                    stroke: $gray-500;
+                }
+            }
+        }
+        
     }  
 }

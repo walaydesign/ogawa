@@ -1,0 +1,106 @@
+.buy {
+    &_item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &_name {
+        width: calc(100% - 126px);
+        margin: 0;
+    }
+    &_uniform {
+        padding: 15px 20px;
+        border-radius: 25px;
+        border: 1px solid;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        .buy_name {
+            width: calc(100% - 106px);
+        }
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid;
+        }
+    }
+    &-remark {
+        padding-bottom: 45px;
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        ol {
+            padding-left: 14px;
+            li {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        }
+    }
+    &-record {
+        border-radius: 20px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        &_name {
+            margin: 0;
+        }
+        &_num {
+            font-weight: 700;
+            margin: 0;
+            color: $gray-500;
+            .x {
+                font-size: 12px;
+                font-weight: normal;
+                margin-right: 3px;
+            }
+        }
+        &_info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 13px;
+            border-top: 1px solid;
+            margin-top: 5px;
+        }
+        &_date {
+            font-size: 14px;
+            margin: 0;
+        }
+        &_status {
+            font-size: 14px;
+            margin: 0;
+            font-weight: 700;
+        }
+    }
+}
+
+.send {
+    // min-height: calc(100vh - 56px - 41px);
+    &-pic {
+        padding-top: 20px;
+        margin: 0 auto 15px;
+        width: fit-content;
+        svg {
+            width: 145px;
+            height: 145px;
+        }
+    }
+    &-text {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+}
