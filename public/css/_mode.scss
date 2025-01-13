@@ -325,7 +325,7 @@ body {
             .modal-header {
                 border-color: $gray-200;
                 h4 {
-                    color: $gray-900;
+                    color: $primary-900;
                 }
             }
         }
@@ -365,6 +365,223 @@ body {
             &_arrow {
                 path {
                     stroke: $secondary-700;
+                }
+            }
+        }
+        .checkbox-item {
+            input[type="radio"] {
+                &::after {
+                    border-color: $third-200;
+                    background-color: #fff;
+                }
+            }
+            input[type="text"] {
+                border-color: $gray-300;
+                color: $text;
+                &::placeholder {
+                    color: $gray-300;
+                }
+            }
+        }
+        .task {
+            &_tabbar {
+                background-color: $primary-50;
+                &_item {
+                    span {
+                        color: $third-600;
+                    }
+                    &.active {
+                        span {
+                            color: $primary-800;
+                        }
+                    }
+                }
+            }
+            &_list {
+                &_item {
+                    &.active {
+                        background-color: $secondary-50;
+                    }
+                }
+                &_inner {
+                    border-color: $third-100;
+                    background-color: #fff;
+                }
+                &_date {
+                    color: $primary-900;
+                }
+                &_num {
+                    color: $gray-600;
+                }
+                &_arrow {
+                    path {
+                        stroke: $secondary-600;
+                    }
+                }
+            }
+            &-card {
+                background-color: #fff;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                border-color: $white;
+                &.puttop {
+                    box-shadow: 0 4px 15px rgba(0, 79, 116, 0.19);
+                }
+                &.strange {
+                    box-shadow: 0 4px 15px rgba(116, 0, 189, 0.18);
+                    .task {
+                        &-card {
+                            &_remark {
+                                border-color: rgba(219, 153, 233, 0.18);
+                                background-color: rgba(219, 153, 233, 0.18);
+                                h4 {
+                                    color: #8F32A2;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.clientreport {
+                    box-shadow: 0 4px 15px rgba(119, 1, 1, 0.19);
+                    .task {
+                        &-card {
+                            &_remark {
+                                border-color: rgba(227, 10, 10, 0.05);
+                                background-color: rgba(227, 10, 10, 0.05);
+                                h4 {
+                                    color: #AF0000;
+                                }
+                            }
+                        }
+                    }
+                }
+                &_infoBtn {
+                    border-color: $primary-500;
+                    svg {
+                        path {
+                            fill: $primary-500;
+                        }
+                    }
+                }
+                &_contact {
+                    border-color: $primary-500;
+                    color: $primary-500;
+                }
+                &_head {
+                    border-color: $third-50;
+                }
+                &_remark {
+                    background-color: $primary-50;
+                    border-color: $primary-50;
+                    h4 {
+                        color: $primary-900;
+                    }
+                    p {
+                        color: $gray-800;
+                    }
+                }
+            }
+            &-info {
+                &_title {
+                    h3 {
+                        color: $secondary-900;
+                    }
+                }
+                &_icon {
+                    path {
+                        fill: $secondary-900;
+                    }                        
+                }
+                &_content {
+                    color: $gray-800;
+                }
+                &_btn {
+                    &_item {
+                        border-color: $primary-400;
+                        background-color: $white;
+                        svg {
+                            path {
+                                fill: $primary-400;
+                            }
+                        }
+                    }
+                }
+            }
+            &-detail {
+                &_remark {
+                    background-color: #fff;
+                    border-color: $third-200;
+                    h4 {
+                        color: $primary-900;
+                    }
+                    p {
+                        color: $gray-800;
+                    }
+                }
+                &_item {
+                    background-color: #fff;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                }
+                &_title {
+                    color: $primary-900;
+                }
+                &_arrow {
+                    >svg {
+                        path {
+                            stroke: $secondary-700;
+                        }
+                    }
+                }
+                &_machine {
+                    &-head {
+                        border-color: $third-50;
+                    }
+                    &_item {
+                        border-color: $third-100;
+                    }
+                    &_text {
+                        h3 {
+                            color: $gray-900;
+                        }
+                    }
+                }
+                &_machinenum {
+                    background-color: $secondary-100;
+                    color: $secondary-700;
+                }
+            }
+        }
+        .modal-message {
+            &_preview {
+                background-color: $primary-50;
+                h5 {
+                    color: $primary-900;
+                }
+                p {
+                    color: $gray-800;
+                }
+            }
+        }
+        .btn {
+            &-bg-lightblue {
+                background-color: $primary-50;
+                color: $primary-800;
+            }
+        }
+        .contact-record {
+            &_date {
+                color: $gray-500;
+            }
+            &_btn {
+                a {
+                    border-color: $primary-400;
+                    span {
+                        color: $primary-800;
+                    }
+                    svg {
+                        path {
+                            fill: $primary-400;
+                        }
+                    }
                 }
             }
         }
@@ -749,6 +966,221 @@ body {
                 }
             }
         }
-        
+        .checkbox-item {
+            input[type="radio"] {
+                &::after {
+                    border-color: $gray-600;
+                    background-color: $gray-900
+                }
+            }
+            input[type="text"] {
+                border-color: $gray-700;
+                color: $white;
+                &::placeholder {
+                    color: $gray-700;
+                }
+            }
+        }
+        .task {
+            &_tabbar {
+                background-color: $gray-900;
+                &_item {
+                    span {
+                        color: $gray-400;
+                    }
+                    &.active {
+                        span {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            &_list {
+                &_item {
+                    &.active {
+                        background-color: $gray-900;
+                    }
+                }
+                &_inner {
+                    border-color: $gray-800;
+                    background-color: #000;
+                }
+                &_date {
+                    color: $white;
+                }
+                &_num {
+                    color: $gray-500;
+                }
+                &_arrow {
+                    path {
+                        stroke: $gray-700;
+                    }
+                }
+            }
+            &-card {
+                background-color: #4F4F4F;
+                box-shadow: none;
+                border-color: #606060;
+                &.puttop {
+                    box-shadow: none;
+                }
+                &.strange {
+                    box-shadow: none;
+                    .task {
+                        &-card {
+                            &_remark {
+                                background-color: transparent;
+                                border-color: #F7CDFF;
+                                h4, p {
+                                    color: #F7CDFF;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.clientreport {
+                    box-shadow: none;
+                    .task {
+                        &-card {
+                            &_remark {
+                                background-color: none;
+                                border-color: #FFBBBB;
+                                h4, p {
+                                    color: #FFBBBB;
+                                }
+                            }
+                        }
+                    }
+                }
+                &_infoBtn {
+                    border-color: $gray-700;
+                    background-color: $gray-700;
+                    svg {
+                        path {
+                            fill: $white;
+                        }
+                    }
+                }
+                &_contact {
+                    border-color: $gray-700;
+                    background-color: $gray-700;
+                    color: $white;
+                }
+                &_head {
+                    border-color: $gray-800;
+                }
+                &_remark {
+                    background-color: transparent;
+                    border-color: $primary-200;
+                    h4 {
+                        color: $primary-200;
+                    }
+                    p {
+                        color: $primary-200;
+                    }
+                }
+            }
+            &-info {
+                &_title {
+                    h3 {
+                        color: $gray-500;
+                    }
+                }
+                &_icon {
+                    path {
+                        fill: $gray-500;
+                    }                        
+                }
+                &_content {
+                    color: $white;
+                }
+                &_btn {
+                    &_item {
+                        border-color: $gray-800;
+                        background-color: $gray-800;
+                        svg {
+                            path {
+                                fill: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            &-detail {
+                &_remark {
+                    background-color: transparent;
+                    border-color: $gray-800;
+                    h4 {
+                        color: $white;
+                    }
+                    p {
+                        color: $gray-300;
+                    }
+                }
+                &_item {
+                    background-color: $gray-900;
+                    box-shadow: none;
+                }
+                &_title {
+                    color: $white;
+                }
+                &_arrow {
+                    >svg {
+                        path {
+                            stroke: $gray-600;
+                        }
+                    }
+                }
+                &_machine {
+                    &-head {
+                        border-color: $gray-800;
+                    }
+                    &_item {
+                        border-color: $gray-700;
+                    }
+                    &_text {
+                        h3 {
+                            color: $white;
+                        }
+                    }
+                }
+                &_machinenum {
+                    background-color: $gray-800;
+                    color: $gray-200;
+                }
+            }
+        }     
+        .modal-message {
+            &_preview {
+                background-color: $gray-800;
+                h5 {
+                    color: $white;
+                }
+                p {
+                    color: $gray-300;
+                }
+            }
+        }  
+        .btn {
+            &-bg-lightblue {
+                background-color: $gray-800;
+                color: $gray-300;
+            }
+        }
+        .contact-record {
+            &_btn {
+                a {
+                    border-color: $gray-300;
+                    span {
+                        color: $gray-300;
+                    }
+                    svg {
+                        path {
+                            fill: $gray-300;
+                        }
+                    }
+                }
+            }
+        }
     }  
 }

@@ -64,9 +64,16 @@ $(".num-box_btn").click(function() {
 	$(this).parents(".num-box").find(".num-box_num").text(num);
 })
 
-// popup
-// $(".modal-backdrop").click(function() {
-// 	$(".modal").removeClass("show");
-// })
+// 任務展開收合
+$(".task_list_head").click(function() {
+	if($(this).parents(".task_list_item").hasClass("active")) {
+		$(this).parents(".task_list_item").removeClass("active");
+		$(this).parents(".task_list_item").find(".task_list_content").slideUp(300);
+	}else {
+		$(this).parents(".task_list_item").addClass("active");
+		$(this).parents(".task_list_item").find(".task_list_content").slideDown(300);
+		// $(this).parents(".task_list_item").siblings(".task_list_item").find(".task_list_content").slideUp(300);
+	}
+})
 
 
