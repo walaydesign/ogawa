@@ -3276,6 +3276,10 @@ body.dark-mode .strange-info {
   background-color: #E30A0A;
 }
 
+.task-tag.bg-purple {
+  background-color: #DB99E9;
+}
+
 .task-people {
   display: -webkit-box;
   display: -ms-flexbox;
