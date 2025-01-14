@@ -22,7 +22,15 @@
                         <path d="M15 18L9 12L15 6" stroke="#004F74" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h1>休假表</h1>
+                <h1>冷4+3滾1 - 場勘回報</h1>
+            </div>
+            <div class="header_icon" data-bs-toggle="modal" data-bs-target="#scout-template">
+                <a>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5061 16.3391C13.1686 16.4703 12.0999 16.7828 11.6124 16.5047C11.5451 16.4656 11.4883 16.4108 11.447 16.3449C11.4056 16.2791 11.3808 16.2041 11.3749 16.1266C11.2217 15.1516 11.9499 12.8984 12.3436 11.6891C12.4749 11.2859 12.5686 10.9922 12.6061 10.8141C12.8905 9.49844 12.7499 8.49219 12.1874 7.82344C11.5106 7.01885 10.3098 6.86231 9.32487 7.00782C8.32329 7.14131 7.34452 7.41045 6.4155 7.80782C6.37233 7.82869 6.33461 7.85933 6.30532 7.89729C6.27604 7.93526 6.25598 7.97951 6.24675 8.02657L6.04362 8.99844C6.03265 9.0531 6.03642 9.10969 6.05454 9.16241C6.07266 9.21513 6.10449 9.26208 6.14675 9.29844C6.18955 9.334 6.24083 9.35787 6.29559 9.36772C6.35035 9.37758 6.40673 9.37309 6.45925 9.35469C6.83112 9.21719 7.99362 8.90782 8.40925 9.28907C8.64362 9.50469 8.578 9.96094 8.48426 10.3016C8.38739 10.6578 8.27175 11.0422 8.15301 11.4453C7.38426 14.0609 6.50926 17.0266 7.89676 17.9516C8.55323 18.4528 9.35225 18.7319 10.178 18.7484C10.9905 18.7484 11.9936 18.4922 13.4374 17.9078C13.4809 17.8909 13.5201 17.8644 13.552 17.8303C13.5839 17.7963 13.6077 17.7555 13.6218 17.7109L13.9186 16.7203C13.9355 16.6638 13.9362 16.6038 13.9207 16.5469C13.9053 16.4901 13.8742 16.4386 13.8311 16.3984C13.788 16.359 13.7347 16.3325 13.6772 16.3219C13.6197 16.3114 13.5604 16.3174 13.5061 16.3391Z" fill="#3BA5D7"/>
+                        <path d="M11.6999 1.25159C11.2529 1.2519 10.816 1.38472 10.4444 1.63327C10.0728 1.88183 9.78329 2.23495 9.61236 2.64802C9.44143 3.06109 9.39678 3.51556 9.48407 3.95399C9.57136 4.39243 9.78666 4.79514 10.1028 5.11125C10.4189 5.42735 10.8216 5.64265 11.26 5.72994C11.6985 5.81723 12.1529 5.77259 12.566 5.60166C12.9791 5.43073 13.3322 5.14118 13.5807 4.76961C13.8293 4.39804 13.9621 3.96112 13.9624 3.51409C13.9622 2.9141 13.7238 2.33874 13.2995 1.91448C12.8753 1.49022 12.2999 1.25179 11.6999 1.25159Z" fill="#3BA5D7"/>
+                    </svg>
+                </a>
             </div>
         </header>
 
@@ -123,36 +131,65 @@
             </div>
         </nav>
 
-        <main class="main">
-            <div class="inner">
-                <div id="calendar"></div>
-                <div class="calendar-list">
-                    <div class="calendar-list_item">
-                        <div class="calendar-list_date">05</div>
-                        <div class="calendar-list_text">
-                            <p class="calendar-list_day">星期四</p>
-                            <p class="calendar-list_reason">休（颱風假）</p>
-                        </div>
+        <main class="main hasfixedbtn">
+            <div class="inner bg-gray">
+                <div class="detail_item">
+                    <div class="d-flex align-items-center justify-content-between mb-1">
+                        <h2 class="detail_item_title">場勘回報<span class="highlight">*</span></h2>
+                        <button class="btn-border-blue btn-import">套用格式</button>
                     </div>
-                    <div class="calendar-list_item">
-                        <div class="calendar-list_date">04</div>
-                        <div class="calendar-list_text">
-                            <p class="calendar-list_day">星期四</p>
-                            <p class="calendar-list_reason">休（颱風假）</p>
-                        </div>
+                    <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea scout-textarea" required></textarea>
+                </div>
+                <div class="detail_item">
+                    <div class="d-flex align-items-center justify-content-between mb-1">
+                        <h2 class="detail_item_title">場勘照片<span class="highlight">*</span></h2>
+                        <button class="btn-border-blue btn-upload">
+                            上傳
+                            <input type="file">
+                        </button>
                     </div>
-                    <div class="calendar-list_item">
-                        <div class="calendar-list_date">03</div>
-                        <div class="calendar-list_text">
-                            <p class="calendar-list_day">星期四</p>
-                            <p class="calendar-list_reason">休（颱風假）</p>
+                    <div class="detail_pic uploading">
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-1.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="calendar-list_item">
-                        <div class="calendar-list_date">02</div>
-                        <div class="calendar-list_text">
-                            <p class="calendar-list_day">星期四</p>
-                            <p class="calendar-list_reason">休（颱風假）</p>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-2.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-3.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-4.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-5.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-6.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-7.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,6 +200,53 @@
             </footer>
         </main>
 
+        <div class="fixed-bottom">
+            <button class="btn-gradient">回報</button>
+        </div>
+
+        <div class="modal scout-template modal-common" id="scout-template" tabindex="-1" aria-labelledby="modal-callLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>場勘格式</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="pt-3">
+                            <p class="scout-template_text">
+                                日期，區域先生/小姐，健檢台數<br>
+                                ●冷/吊(風鼓數)/窗/直/滾＋廠牌＋年份＋洗衣機重量＋樓層/位置(臥室/客廳)
+                                檢查後髒/不髒，開孔位置有沒有問題，有無挑高/非家用加價項目。<br>
+                                ●室外機台數，髒/不髒，位置可/不可清洗<br>
+                                ●洗衣機是否有拆洗過？是否定期使用洗槽劑？<br>
+                                －－－－－－－－－－－－－－－<br>
+                                空間足夠可/不可清洗，需要增加清洗工時，建議單人/雙人作業<br>
+                                清洗場域是否足夠？有水有電？<br>
+                                －－－－－－－－－－－<br>
+                                特殊注意事項：<br>
+                                客人重視什麼：<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal delete-confirm modal-common" id="delete-confirm" tabindex="-1" aria-labelledby="modal-callLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>刪除照片</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="pt-3">
+                            <p>確定要刪除照片嗎？</p>
+                            <button class="btn-gradient">確定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="../public/js/jquery/jquery.min.js"></script>
@@ -170,26 +254,12 @@
     <script src="../public/js/swiper/swiper-bundle.min.js"></script>
     <script src="../public/js/fullcalendar/main.js"></script>
     <script src="../public/js/common.js"></script>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var calendarEl = document.getElementById("calendar");
-          var calendar = new FullCalendar.Calendar(calendarEl, {
-            locale: 'zh-tw',
-            initialView: "dayGridMonth",
-            headerToolbar: {
-              left: "prev",
-              center: "title",
-              right: "next",
-            },
-            events: [
-                { title: "休", start: "2025-01-01", end: "2025-01-06" ,color:"#FF7631" },
-                { title: "颱風假", start: "2025-01-10", end: "2025-01-16" ,color:"#FFB71B" },
-                { title: "必休", start: "2025-01-20", end: "2025-01-26" ,color:"#E30A0A" },
-            ],
-            height:400,
-          });
-          calendar.render();
-        });
-      </script>
+        $(".btn-import").click(function() {
+            let scoutText = $(".scout-template_text").text();
+            $(".scout-textarea").val(scoutText);
+        })
+    </script>
 </body>
 </html>

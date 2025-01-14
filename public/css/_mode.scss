@@ -282,6 +282,9 @@ body {
         .fixed-bottom {
             background-color: $white;
             border-color: $third-100;
+            span {
+                color: $gray-700;
+            }
         }
         .send {
             svg {
@@ -374,12 +377,27 @@ body {
                     border-color: $third-200;
                     background-color: #fff;
                 }
+                &:checked {
+                    &::after {
+                        background-color: $primary-400;
+                        border-color: $primary-400;
+                    }
+                }
             }
             input[type="text"] {
-                border-color: $gray-300;
+                border-color: $gray-200;
                 color: $text;
+                background-color: #fff;
                 &::placeholder {
                     color: $gray-300;
+                }
+            }
+            &.return-price {
+                label {
+                    color: $gray-900;
+                }
+                p {
+                    color: $gray-900;
                 }
             }
         }
@@ -565,6 +583,16 @@ body {
             &-bg-lightblue {
                 background-color: $primary-50;
                 color: $primary-800;
+                svg {
+                    path {
+                        fill: $primary-700;
+                        stroke: $primary-700;
+                    }
+                }
+            }
+            &-border-blue {
+                border-color: $primary-400;
+                color: $primary-800;
             }
         }
         .contact-record {
@@ -584,6 +612,109 @@ body {
                     }
                 }
             }
+        }
+        .detail {
+            &_item {
+                &_title {
+                    color: $primary-800;
+                }
+                &_content {
+                    color: $gray-800;
+                }
+                &_textarea {
+                    background-color: #fff;
+                    border-color: $gray-200;
+                    &::placeholder {
+                        color: $gray-300;
+                    }
+                }
+                &_input {
+                    background-color: #fff;
+                    border-color: $gray-200;
+                    &::placeholder {
+                        color: $gray-300;
+                    }
+                }
+                &_select {
+                    border-color: $gray-200;
+                    background-color: #fff;
+                    background-image: url(../img/chevron-down-select.svg);
+                }
+                &-service {
+                    &::after {
+                        background: linear-gradient(to right, rgba(255,255,255,0) 0%, #fff 100%);
+                    }
+                }
+            }
+            &_intro {
+                color: $gray-600;                
+            }
+        }
+        .total-price {
+            background-color: $secondary-100;
+            h3 {
+                color: $primary-900;
+            }
+        }
+        .report_split {
+            label {
+                color: $gray-900;
+            }
+        }
+        .input-chechbox {
+            &::after {
+                border-color: $third-200;
+            }
+            &:checked {
+                &::after {
+                    background-color: $primary-400;
+                    border-color: $primary-400;
+                }
+            }
+            &-wrap {
+                input[type="text"] {
+                    border-color: $gray-200;
+                    background-color: #fff;
+                    &::placeholder {
+                        color: $gray-300;
+                    }
+                }
+            }
+        }
+        .task-people {
+            border-color: $third-100;
+        }
+        .upload {
+            &_pic {
+                &_inner {
+                    background-color: $third-50;
+                    svg {
+                        path {
+                            fill: $third-300;
+                        }
+                    }
+                }
+                &::after {
+                    background-color: $third-200;
+                    background: conic-gradient($third-200 0, $third-200 60deg, transparent 60deg);
+                }
+            }
+            p {
+                color: $third-600;
+            }
+        }
+        .modal-mechinereport {
+            .row {
+                >div {
+                    a {
+                        border-color: $primary-500;
+                        color: $primary-800;
+                    }
+                }
+            }
+        }
+        .strange-info {
+            background-color: #fff;
         }
     }
     &.dark-mode {
@@ -877,6 +1008,9 @@ body {
         .fixed-bottom {
             background-color: #000;
             border-color: $gray-900;
+            span {
+                color: $gray-400;
+            }
         }
         .inner {
             background-color: #000 !important;
@@ -926,6 +1060,9 @@ body {
                     color: $white;
                 }
             }
+            .num-box_btn {
+                background-color: $gray-800;
+            }
         }
         .modal-call {
             &_item {
@@ -970,14 +1107,23 @@ body {
             input[type="radio"] {
                 &::after {
                     border-color: $gray-600;
-                    background-color: $gray-900
+                    background-color: $gray-900;
                 }
             }
             input[type="text"] {
                 border-color: $gray-700;
                 color: $white;
+                background-color: transparent;
                 &::placeholder {
                     color: $gray-700;
+                }
+            }
+            &.return-price {
+                label {
+                    color: $gray-300;
+                }
+                p {
+                    color: $gray-300;
                 }
             }
         }
@@ -1165,6 +1311,17 @@ body {
             &-bg-lightblue {
                 background-color: $gray-800;
                 color: $gray-300;
+                svg {
+                    path {
+                        fill: $gray-300;
+                        stroke: $gray-300;
+                    }
+                }
+            }
+            &-border-blue {
+                border-color: $gray-800;
+                background-color: $gray-800;
+                color: $gray-300;
             }
         }
         .contact-record {
@@ -1182,5 +1339,124 @@ body {
                 }
             }
         }
+        .detail {
+            &_item {
+                &_title {
+                    color: $white;
+                }
+                &_content {
+                    color: $gray-500;
+                }
+                &_textarea {
+                    background-color: transparent;
+                    border-color: $gray-800;
+                    color: $gray-300;
+                    &::placeholder {
+                        color: $gray-800;
+                    }
+                }
+                &_input {
+                    background-color: transparent;
+                    border-color: $gray-800;
+                    color: $gray-300;
+                    &::placeholder {
+                        color: $gray-800;
+                    }
+                }
+                &_select {
+                    background-color: transparent;
+                    border-color: $gray-800;
+                    color: $gray-300;
+                    background-image: url(../img/chevron-down-white.svg);
+                }
+                &-service {
+                    &::after {
+                        background: linear-gradient(to right, rgba(0,0,0,0) 0%, #000 100%);
+                    }
+                }
+                .checkbox-item {
+                    input[type="radio"] {
+                        &::after {
+                            background-color: #000;
+                        }
+                    }
+                    label {
+                        color: $gray-300;
+                    }
+                }
+                .input-chechbox-wrap {
+                    label {
+                        color: $gray-300;
+                    }
+                }
+            }
+            &_intro {
+                color: $gray-400;                
+            }
+        }
+        .total-price {
+            background-color: $gray-900;
+            h3 {
+                color: $white;
+            }
+        }
+        .report_split {
+            label {
+                color: $gray-300;
+            }
+        }
+        .input-chechbox {
+            &::after {
+                border-color: $gray-600;
+                background-color: #000;
+            }
+            &-wrap {
+                input[type="text"] {
+                    border-color: $gray-700;
+                    background-color: transparent;
+                    color: $gray-300;
+                    &::placeholder {
+                        color: $gray-700;
+                    }
+                }
+            }
+        }
+        .task-people {
+            border-color: $gray-800;
+        }
+        .upload {
+            &_pic {
+                &_inner {
+                    background-color: $gray-900;
+                    svg {
+                        path {
+                            fill: $white;
+                        }
+                    }
+                }
+                &::after {
+                    background-color: $gray-300;
+                    background: conic-gradient($gray-300 0, $gray-300 60deg, transparent 60deg);
+                }
+            }
+            p {
+                color: $white;
+            }
+        }
+        .modal-mechinereport {
+            .row {
+                >div {
+                    a {
+                        border-color: $gray-800;
+                        background-color: $gray-800;
+                        color: $gray-300;
+                    }
+                }
+            }
+        }
+        .strange-info {
+            background-color: $gray-900;
+        }
+        
     }  
 }

@@ -22,7 +22,7 @@
                         <path d="M15 18L9 12L15 6" stroke="#004F74" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h1>休假表</h1>
+                <h1>冷4+3滾1 - 服務回報</h1>
             </div>
         </header>
 
@@ -123,36 +123,169 @@
             </div>
         </nav>
 
-        <main class="main">
-            <div class="inner">
-                <div id="calendar"></div>
-                <div class="calendar-list">
-                    <div class="calendar-list_item">
-                        <div class="calendar-list_date">05</div>
-                        <div class="calendar-list_text">
-                            <p class="calendar-list_day">星期四</p>
-                            <p class="calendar-list_reason">休（颱風假）</p>
+        <main class="main hasfixedbtn">
+            <div class="inner bg-gray">
+                <div class="detail_item">
+                    <div class="d-flex align-items-center justify-content-between mb-1">
+                        <h2 class="detail_item_title">收據照片<span class="highlight">*</span></h2>
+                        <button class="btn-border-blue btn-upload">
+                            上傳
+                            <input type="file">
+                        </button>
+                    </div>
+                    <div class="detail_pic uploading">
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-1.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-2.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-3.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-4.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-5.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-6.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-7.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="calendar-list_item">
-                        <div class="calendar-list_date">04</div>
-                        <div class="calendar-list_text">
-                            <p class="calendar-list_day">星期四</p>
-                            <p class="calendar-list_reason">休（颱風假）</p>
+                    <div class="total-price">
+                        <h3>總金額</h3>
+                        <p>$500</p>
+                    </div>
+                </div>
+                <div class="detail_item">
+                    <h2 class="detail_item_title mb-1">個人拆帳<span class="highlight">*</span></h2>
+                    <div>
+                        <div class="d-flex align-items-center report_split mb-2">
+                            <input type="checkbox" class="input-chechbox">
+                            <label for="">現金</label>
+                            <input type="text" placeholder="請輸入金額" class="detail_item_input report_split_input">
+                        </div>
+                        <div class="d-flex align-items-center report_split">
+                            <input type="checkbox" class="input-chechbox">
+                            <label for="">轉帳</label>
+                            <input type="text" placeholder="請輸入金額" class="detail_item_input report_split_input">
                         </div>
                     </div>
-                    <div class="calendar-list_item">
-                        <div class="calendar-list_date">03</div>
-                        <div class="calendar-list_text">
-                            <p class="calendar-list_day">星期四</p>
-                            <p class="calendar-list_reason">休（颱風假）</p>
-                        </div>
+                </div>
+                <div class="detail_item">
+                    <h2 class="detail_item_title mb-1">個人車馬</h2>
+                    <div class="d-flex align-items-center service-report_price mb-2">
+                        <input type="text" placeholder="請輸入" class="detail_item_input">
+                        <p>元</p>
                     </div>
-                    <div class="calendar-list_item">
-                        <div class="calendar-list_date">02</div>
-                        <div class="calendar-list_text">
-                            <p class="calendar-list_day">星期四</p>
-                            <p class="calendar-list_reason">休（颱風假）</p>
+                </div>
+                <div class="detail_item">
+                    <h2 class="detail_item_title mb-1">零件更換</h2>
+                    <div class="d-flex align-items-center service-report_price mb-2">
+                        <input type="text" placeholder="請輸入" class="detail_item_input">
+                        <p>元</p>
+                    </div>
+                </div>
+                <div class="detail_item">
+                    <h2 class="detail_item_title mb-1">其他金額1</h2>
+                    <div class="d-flex align-items-center service-report_price mb-2">
+                        <input type="text" placeholder="請輸入" class="detail_item_input">
+                        <p>元</p>
+                    </div>
+                </div>
+                <div class="detail_item">
+                    <h2 class="detail_item_title mb-1">其他金額2</h2>
+                    <div class="d-flex align-items-center service-report_price mb-2">
+                        <input type="text" placeholder="請輸入" class="detail_item_input">
+                        <p>元</p>
+                    </div>
+                </div>
+                <div class="detail_item">
+                    <h2 class="detail_item_title mb-1">其他金額3</h2>
+                    <div class="d-flex align-items-center service-report_price mb-2">
+                        <input type="text" placeholder="請輸入" class="detail_item_input">
+                        <p>元</p>
+                    </div>
+                </div>
+                <div class="detail_item">
+                    <h2 class="detail_item_title mb-1">備註</h2>
+                    <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea"></textarea>
+                </div>
+                <div class="detail_item">
+                    <div class="d-flex align-items-center justify-content-between mb-1">
+                        <h2 class="detail_item_title">評論</h2>
+                        <button class="btn-border-blue btn-upload">
+                            上傳
+                            <input type="file">
+                        </button>
+                    </div>
+                    <div class="detail_pic uploading">
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-1.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-2.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-3.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-4.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-5.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-6.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="detail_pic_item">
+                            <img src="../public/img/pic-7.png" alt="">
+                            <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                <img src="../public/img/x.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,6 +296,26 @@
             </footer>
         </main>
 
+        <div class="fixed-bottom">
+            <button class="btn-gradient">回報</button>
+        </div>
+
+        <div class="modal delete-confirm modal-common" id="delete-confirm" tabindex="-1" aria-labelledby="modal-callLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>刪除照片</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="pt-3">
+                            <p>確定要刪除照片嗎？</p>
+                            <button class="btn-gradient">確定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="../public/js/jquery/jquery.min.js"></script>
@@ -170,26 +323,7 @@
     <script src="../public/js/swiper/swiper-bundle.min.js"></script>
     <script src="../public/js/fullcalendar/main.js"></script>
     <script src="../public/js/common.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var calendarEl = document.getElementById("calendar");
-          var calendar = new FullCalendar.Calendar(calendarEl, {
-            locale: 'zh-tw',
-            initialView: "dayGridMonth",
-            headerToolbar: {
-              left: "prev",
-              center: "title",
-              right: "next",
-            },
-            events: [
-                { title: "休", start: "2025-01-01", end: "2025-01-06" ,color:"#FF7631" },
-                { title: "颱風假", start: "2025-01-10", end: "2025-01-16" ,color:"#FFB71B" },
-                { title: "必休", start: "2025-01-20", end: "2025-01-26" ,color:"#E30A0A" },
-            ],
-            height:400,
-          });
-          calendar.render();
-        });
-      </script>
+
+
 </body>
 </html>

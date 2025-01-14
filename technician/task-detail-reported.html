@@ -288,7 +288,11 @@
                 </div>
                 <div class="task-detail_item">
                     <h2 class="task-detail_title">客訴</h2>
-                    <a href="" class="btn-bg-lightblue">回報</a>
+                    <a href="" class="task-detail_arrow">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 15.5L12.5 10.5L7.5 5.5" stroke="#AB882A" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="task-detail_item d-block">
                     <div class="task-detail_machine-head d-flex align-items-center justify-content-between">
@@ -361,7 +365,7 @@
                         <h2 class="task-detail_title">清洗室外機</h2>
                         <div class="task-detail_machinenum ms-2">0</div>
                     </div>
-                    <button class="btn-bg-lightblue" data-bs-toggle="modal" data-bs-target="#modal-clean">回報</button>
+                    <button class="btn-bg-lightblue" data-bs-toggle="modal" data-bs-target="#modal-clean">編輯</button>
                 </div>
                 <div class="task-detail_item">
                     <h2 class="task-detail_title">服務回報</h2>
@@ -663,7 +667,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="../public/js/jquery/jquery.min.js"></script>
@@ -671,5 +674,11 @@
     <script src="../public/js/swiper/swiper-bundle.min.js"></script>
     <script src="../public/js/fullcalendar/main.js"></script>
     <script src="../public/js/common.js"></script>
+    <script>
+        $(".btn-clean").click(function() {
+            let num = $(this).parents(".modal-clean").find(".num-box_num").text();
+            $(".task-detail_machinenum").text(num);
+        })
+    </script>
 </body>
 </html>
