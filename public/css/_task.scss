@@ -183,6 +183,10 @@
             &-purple {
                 background-color: $purple;
             }
+            &-lightblue {
+                background-color: $primary-50;
+                color: $primary-800;
+            }
         }
     }
     &-people {
@@ -302,12 +306,25 @@
                 align-items: center;
                 justify-content: center;
                 margin-left: 10px;
+                transition: $transition;
+                cursor: pointer;
                 &:first-child {
                     margin-left: 0;
                 }
                 svg {
                     width: 16px;
                     height: 16px;
+                    path {
+                        transition: $transition;
+                    }
+                }
+                &:hover {
+                    background-color: $primary-400 !important;
+                    svg {
+                        path {
+                            fill: #fff !important;
+                        }
+                    }
                 }
             }
         }
@@ -638,8 +655,15 @@
                 margin-right: 8px;
                 margin-bottom: 8px;
                 border: 1px solid transparent;
-                .detail_pic_item {
-                    margin: 0;
+                position: relative;
+                .detail_pic {
+                    &_item {
+                        margin: 0;
+                    }
+                    &_x {
+                        top: 10px;
+                        right: 10px;
+                    }
                 }
                 &.people {
                     &-1 {

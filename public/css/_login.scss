@@ -71,4 +71,22 @@
         }
         
     }
+    &-manager {
+        .login {
+            &_input {
+                max-width: 375px;
+                width: calc(100% - 40px);
+                margin: 0 auto 17px;
+                background-color: #fff;
+            }
+            &_line {
+                >p {
+                    background-color: $gray-50 !important;
+                }
+            }
+        }
+        button {
+            margin-top: 40px;
+        }
+    }
 }

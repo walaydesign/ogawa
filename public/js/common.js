@@ -106,4 +106,3 @@ $(".popup-pic_bg").click(function() {
 $(".detail_item-service_split").on("scroll", function() {
 	$(this).parents(".detail_item-service").addClass("nomask");
 })
-
