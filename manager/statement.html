@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小川職人後台系統</title>
+    <meta name="color-scheme" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../public/css/fullcalendar/main.css">
+    <link rel="stylesheet" href="../public/css/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body class="light-mode">
+    <header class="header-manager">
+        <div class="header_logo">
+            <img src="../public/img/logo-blue.png" alt="">
+        </div>
+        <div class="header_icon d-flex align-items-center">
+            <p class="header_icon_name">佳佳</p>
+            <div class="header_icon_item header_notify">
+                <svg class="header_icon_bell" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 1.25C8.21983 1.25 4.75004 4.71979 4.75004 9V9.7041C4.75004 10.401 4.54375 11.0824 4.15717 11.6622L3.00856 13.3851C1.67547 15.3848 2.69318 18.1028 5.01177 18.7351C5.76738 18.9412 6.52937 19.1155 7.29578 19.2581L7.29768 19.2632C8.06667 21.3151 10.122 22.75 12.5 22.75C14.878 22.75 16.9333 21.3151 17.7023 19.2632L17.7042 19.2581C18.4706 19.1155 19.2327 18.9412 19.9883 18.7351C22.3069 18.1028 23.3246 15.3848 21.9915 13.3851L20.8429 11.6622C20.4563 11.0824 20.25 10.401 20.25 9.7041V9C20.25 4.71979 16.7802 1.25 12.5 1.25ZM15.8764 19.537C13.6335 19.805 11.3664 19.8049 9.12349 19.5369C9.83444 20.5585 11.071 21.25 12.5 21.25C13.9289 21.25 15.1655 20.5585 15.8764 19.537ZM6.25004 9C6.25004 5.54822 9.04826 2.75 12.5 2.75C15.9518 2.75 18.75 5.54822 18.75 9V9.7041C18.75 10.6972 19.044 11.668 19.5948 12.4943L20.7434 14.2172C21.5086 15.3649 20.9245 16.925 19.5936 17.288C14.9494 18.5546 10.0507 18.5546 5.40644 17.288C4.07561 16.925 3.49147 15.3649 4.25664 14.2172L5.40524 12.4943C5.95609 11.668 6.25004 10.6972 6.25004 9.7041V9Z" fill="#688390"/>
+                </svg>
+                <div class="header_icon_notify">
+                    <a href="" class="header_icon_notify_item">
+                        <div class="header_icon_notify_text">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="header_icon_notify_tag bg-blue">再追蹤</div>
+                                <span class="header_icon_notify_time">7/26(二) 20:00</span>
+                            </div>
+                            <p class="header_icon_notify_title">今天有一筆再追蹤</p>
+                        </div>
+                        <svg class="header_icon_notify_arrow" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 15.5L12.5 10.5L7.5 5.5" stroke="#AB882A" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="" class="header_icon_notify_item">
+                        <div class="header_icon_notify_text">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="header_icon_notify_tag bg-red">客訴處理</div>
+                                <span class="header_icon_notify_time">7/26(二) 20:00</span>
+                            </div>
+                            <p class="header_icon_notify_title">尚有有1筆客訴未結案</p>
+                        </div>
+                        <svg class="header_icon_notify_arrow" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 15.5L12.5 10.5L7.5 5.5" stroke="#AB882A" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="" class="header_icon_notify_item">
+                        <div class="header_icon_notify_text">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="header_icon_notify_tag bg-purple">異常處理</div>
+                                <span class="header_icon_notify_time">7/26(二) 20:00</span>
+                            </div>
+                            <p class="header_icon_notify_title">尚有1筆異常未結案</p>
+                        </div>
+                        <svg class="header_icon_notify_arrow" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 15.5L12.5 10.5L7.5 5.5" stroke="#AB882A" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="" class="header_icon_notify_item">
+                        <div class="header_icon_notify_text">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="header_icon_notify_tag bg-blue">再追蹤</div>
+                                <span class="header_icon_notify_time">7/26(二) 20:00</span>
+                            </div>
+                            <p class="header_icon_notify_title">今天有一筆再追蹤</p>
+                        </div>
+                        <svg class="header_icon_notify_arrow" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 15.5L12.5 10.5L7.5 5.5" stroke="#AB882A" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="header_icon_item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.67891 22.7812C4.56516 22.7812 1.21875 19.4348 1.21875 15.3211V8.67891C1.21875 4.56562 4.56516 1.21875 8.67891 1.21875C10.5173 1.21875 12.2836 1.89328 13.6528 3.11859C13.9889 3.41953 14.0175 3.93797 13.7166 4.27406C13.5614 4.4475 13.3392 4.54641 13.1067 4.54641C12.9052 4.54641 12.7116 4.47234 12.5616 4.33781C11.4933 3.38156 10.1147 2.85516 8.67938 2.85516C5.46797 2.85516 2.85562 5.4675 2.85562 8.67891V15.3211C2.85562 18.5325 5.46797 21.1448 8.67938 21.1448C10.1147 21.1448 11.4933 20.6184 12.5616 19.6622C12.712 19.5277 12.9056 19.4536 13.1067 19.4536C13.3392 19.4536 13.5619 19.553 13.7166 19.7259C13.8623 19.8886 13.9359 20.0986 13.9237 20.317C13.9116 20.535 13.8155 20.7356 13.6523 20.8814C12.2836 22.1067 10.5173 22.7812 8.67891 22.7812ZM18.8517 16.1395C18.5911 16.1395 18.3525 16.02 18.1964 15.8123C18.0652 15.6375 18.0098 15.4219 18.0408 15.2058C18.0717 14.9892 18.1852 14.798 18.36 14.6667C18.9122 14.2528 19.4423 13.7972 19.9364 13.3134L20.4417 12.8184H7.57219C7.12078 12.8184 6.75375 12.4514 6.75375 12C6.75375 11.5486 7.12078 11.1816 7.57219 11.1816H20.4417L19.9364 10.6866C19.4428 10.2028 18.9127 9.74766 18.36 9.33328C18.1852 9.20203 18.0717 9.01078 18.0408 8.79422C18.0098 8.57766 18.0652 8.3625 18.1964 8.18766C18.3525 7.97953 18.5911 7.86047 18.8517 7.86047C19.0294 7.86047 19.1991 7.91719 19.342 8.02406C20.4867 8.88281 21.5241 9.88172 22.425 10.9936C22.6552 11.2777 22.7817 11.6348 22.7817 11.9995C22.7817 12.3642 22.6552 12.7219 22.425 13.0055C21.5241 14.1173 20.4867 15.1162 19.342 15.975C19.1991 16.0819 19.0298 16.1386 18.8517 16.1386V16.1395Z" fill="#3BA5D7"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main class="main main-manager">
+        <div class="inner">
+            <nav class="manager-nav">
+                <ul>
+                    <li><a href="">訂單查詢</a></li>
+                    <li><a href="">發票</a></li>
+                    <li><a href="" class="active">統計</a></li>
+                    <li><a href="">物品申購管理</a></li>
+                    <li><a href="">跑馬燈管理</a></li>
+                    <li><a href="">原廠資訊管理</a></li>
+                </ul>
+                <p class="manager-nav_copyright">版權所有©2024 小川職人</p>
+            </nav>
+            <div class="manager-main">
+                <div class="manager-title">
+                    <div class="d-flex align-items-center">
+                        <button class="btn-back">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="#004F74" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <h1>對帳單</h1>
+                    </div>
+                    <div class="manager-title_btn d-flex align-items-center">
+                        <a href="" class="btn-icon-border-blue">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.751 7.19905C19.9133 7.3614 20 7.579 19.9992 7.80085L20 7.8V20.55C20 21.2266 19.7314 21.8751 19.2529 22.3528C18.7752 22.8314 18.1266 23.1 17.45 23.1H5.55C4.8734 23.1 4.22485 22.8314 3.74715 22.3528C3.2686 21.8751 3 21.2266 3 20.55V3.55C3 2.8734 3.2686 2.22485 3.74715 1.74715C4.22485 1.2686 4.8734 1 5.55 1H13.2C13.4253 1 13.642 1.08925 13.801 1.24905L19.751 7.19905ZM18.3 8.6501V20.55C18.3 20.7752 18.2108 20.992 18.051 21.1509C17.892 21.3107 17.6753 21.4 17.45 21.4H5.55C5.32475 21.4 5.108 21.3107 4.94905 21.1509C4.78925 20.992 4.7 20.7752 4.7 20.55V3.55C4.7 3.32475 4.78925 3.108 4.94905 2.94905C5.108 2.78925 5.32475 2.7 5.55 2.7H12.3501V2.7001V6.1001C12.3501 7.50855 13.4916 8.6501 14.9001 8.6501H18.3ZM14.0501 3.902V6.1001C14.0501 6.5693 14.4309 6.9501 14.9001 6.9501H17.0982L14.0501 3.902ZM12.3499 14.1016L13.4492 15.2009C13.7807 15.5324 14.3196 15.5324 14.6511 15.2009C14.9826 14.8694 14.9826 14.3305 14.6511 13.999L12.1011 11.449C11.7696 11.1166 11.2307 11.1166 10.8992 11.449L8.34921 13.999C8.01771 14.3305 8.01771 14.8694 8.34921 15.2009C8.68071 15.5324 9.21961 15.5324 9.55111 15.2009L10.6499 14.1021V18C10.6499 18.4692 11.0307 18.85 11.4999 18.85C11.9691 18.85 12.3499 18.4692 12.3499 18V14.1016Z" fill="black"/>
+                            </svg>
+                            <span>匯出</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="order-head_searchForm d-flex align-items-center statement_search">
+                    <div class="statement_search_form">
+                        <div class="row m-0">
+                            <div class="col-6">
+                                <div class="order-head_searchForm_date">
+                                    <input type="text" id="datepicker-from" class="order-head_searchForm_input datepick input-datepick" placeholder="開始日期">
+                                    <span>~</span>
+                                    <input type="text" id="datepicker-to" class="order-head_searchForm_input datepick input-datepick" placeholder="結束日期">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <select name="" id="" class="order-head_searchForm_select">
+                                    <option value="">選擇技師</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-bg-blue ms-auto d-block">搜尋</button>
+                </div>
+                <div class="statement_data">
+                    <div class="row statement_data_outer">
+                        <div class="col-6">
+                            <h2 class="statement_title">執案</h2>
+                            <div class="row statement_data_inner">
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">工作天數</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">案件數</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">數量異動</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h2 class="statement_title">執案</h2>
+                            <div class="row statement_data_inner">
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">冷氣台數</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">室外機台數</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">洗衣機台數</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h2 class="statement_title">評論</h2>
+                            <div class="row statement_data_inner">
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">評論數</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h2 class="statement_title">回報</h2>
+                            <div class="row statement_data_inner">
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">延遲回報</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h2 class="statement_title">異常</h2>
+                            <div class="row statement_data_inner">
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">異常件數</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">賠償金額</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h2 class="statement_title">客訴</h2>
+                            <div class="row statement_data_inner">
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">客訴件數</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="statement_data_item">
+                                        <h3 class="statement_data_title">賠償金額</h3>
+                                        <p class="statement_data_num">10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex statement_data_text">
+                                <h2 class="statement_title">客戶回報</h2>
+                                <p class="statement_data_content">無防護復原、無現場說明、無保養建議</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex statement_data_text">
+                                <h2 class="statement_title">累計營收</h2>
+                                <p class="statement_data_content">$50000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="statement_table">
+                    <table class="table-common">
+                        <tr class="table-common_title">
+                            <th>日期</th>
+                            <th>時間</th>
+                            <th>項目/數量</th>
+                            <th>數量異動</th>
+                            <th>A收據總金額</th>
+                            <th>B執案金額<br>(個人)</th>
+                            <th>C現金<br>(個人)</th>
+                            <th>D轉帳<br>(個人)</th>
+                            <th>E零件<br>(不計)</th>
+                            <th>問券課評</th>
+                        </tr>
+                        <tr class="table-common_content leave">
+                            <td>2024/09/01</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table-common_content">
+                            <td>2024/09/01</td>
+                            <td>12:00</td>
+                            <td>冷3四2+2/忠瀚</td>
+                            <td>4</td>
+                            <td>3000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                        </tr>
+                        <tr class="table-common_content">
+                            <td>2024/09/01</td>
+                            <td>12:00</td>
+                            <td>冷3四2+2/忠瀚</td>
+                            <td>4</td>
+                            <td>3000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                        </tr>
+                        <tr class="table-common_content">
+                            <td>2024/09/01</td>
+                            <td>12:00</td>
+                            <td>冷3四2+2/忠瀚</td>
+                            <td>4</td>
+                            <td>3000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                        </tr>
+                        <tr class="table-common_content">
+                            <td>2024/09/01</td>
+                            <td>12:00</td>
+                            <td>冷3四2+2/忠瀚</td>
+                            <td>4</td>
+                            <td>3000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                            <td>4000</td>
+                        </tr>
+                    </table>
+                    <div>
+                        <h2 class="statement_title">異常</h2>
+                        <table class="table-common color-purple">
+                            <tr class="table-common_title">
+                                <th>項目/數量</th>
+                                <th>清洗日</th>
+                                <th>申訴日期</th>
+                                <th>問題分類</th>
+                                <th>異常描述<br>(返修單)</th>
+                                <th>處理方式</th>
+                                <th>賠款</th>
+                                <th>結案日</th>
+                                <th>備註</th>
+                            </tr>
+                            <tr class="table-common_content">
+                                <td>冷1</td>
+                                <td>2024/09/01</td>
+                                <td>2024/09/01</td>
+                                <td>沒洗乾淨</td>
+                                <td>膠圈內側處未翻洗淨，要求返洗</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="table-common_content">
+                                <td>冷1</td>
+                                <td>2024/09/01</td>
+                                <td>2024/09/01</td>
+                                <td>沒洗乾淨</td>
+                                <td>膠圈內側處未翻洗淨，要求返洗</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <h2 class="statement_title">客訴</h2>
+                        <table class="table-common color-red">
+                            <tr class="table-common_title">
+                                <th>項目/數量</th>
+                                <th>清洗日</th>
+                                <th>申訴日期</th>
+                                <th>問題分類</th>
+                                <th>異常描述<br>(返修單)</th>
+                                <th>處理方式</th>
+                                <th>賠款</th>
+                                <th>結案日</th>
+                                <th>備註</th>
+                            </tr>
+                            <tr class="table-common_content">
+                                <td>冷1</td>
+                                <td>2024/09/01</td>
+                                <td>2024/09/01</td>
+                                <td>沒洗乾淨</td>
+                                <td>膠圈內側處未翻洗淨，要求返洗</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="table-common_content">
+                                <td>冷1</td>
+                                <td>2024/09/01</td>
+                                <td>2024/09/01</td>
+                                <td>沒洗乾淨</td>
+                                <td>膠圈內側處未翻洗淨，要求返洗</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../public/js/jquery/jquery.min.js"></script>
+    <script src="../public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="../public/js/fullcalendar/main.js"></script>
+    <script src="../public/js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../public/js/common-manager.js"></script>
+</body>
+</html>

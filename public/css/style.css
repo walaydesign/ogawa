@@ -942,6 +942,63 @@ a:hover {
   padding: 0;
 }
 
+.modal-common.v-desktop {
+  overflow-y: hidden;
+}
+
+.modal-common.v-desktop .modal-dialog {
+  top: 50%;
+  left: 50%;
+  bottom: inherit;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modal-common.v-desktop .modal-content {
+  border-radius: 20px;
+  padding: 0 30px;
+}
+
+.modal-common.v-desktop .modal-header {
+  padding: 20px 0;
+}
+
+.modal-common.v-desktop .modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #004F74;
+}
+
+.modal-common.v-desktop .modal-common_close svg {
+  width: 24px;
+  height: 24px;
+}
+
+.modal-common.v-desktop .modal-common_close svg path {
+  stroke: #3BA5D7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.modal-common.v-desktop .modal-common_close:hover svg path {
+  stroke: #D9B860;
+}
+
+.modal-common.v-desktop .modal-body {
+  max-height: calc(80vh - 71px);
+  overflow-y: auto;
+}
+
+.modal-common.v-desktop .modal-body::-webkit-scrollbar {
+  background-color: #ECF0F2;
+  width: 10px;
+}
+
+.modal-common.v-desktop .modal-body::-webkit-scrollbar-thumb {
+  background-color: #BECACF;
+  border-radius: 10px;
+}
+
 .checkbox-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1130,6 +1187,10 @@ a:hover {
   padding: 30px 40px 40px 340px;
 }
 
+.manager-main .task-card .task-card_title {
+  width: auto;
+}
+
 .manager-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1243,14 +1304,33 @@ a:hover {
   padding-right: 15px;
 }
 
+.table-common_content.leave td {
+  background-color: #F9E7E7;
+}
+
 .table-common_func a {
   text-decoration: underline;
+  color: #004F74;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.table-common_func a:hover {
+  color: #735400;
 }
 
 .table-common_arrow {
   width: 10px;
   margin-left: 5px;
   cursor: pointer;
+}
+
+.table-common.color-purple .table-common_title th {
+  background-color: #DB99E9;
+}
+
+.table-common.color-red .table-common_title th {
+  background-color: #E30A0A;
 }
 
 .input-datepick {
@@ -1305,6 +1385,16 @@ a:hover {
   background-color: #53B8E6;
   color: #fff;
   font-weight: 700;
+}
+
+.list-num {
+  color: #909090;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.list-num p {
+  margin: 0;
 }
 
 body.light-mode {
@@ -3252,10 +3342,41 @@ body.dark-mode .strange-info {
   margin: 0;
 }
 
+.buy-record_date.manager-date {
+  color: #8FA4AE !important;
+}
+
 .buy-record_status {
   font-size: 14px;
   margin: 0;
   font-weight: 700;
+}
+
+.buy-record_head {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ECF0F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.buy-record_technician {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #004F74;
+}
+
+.buy-record_btn {
+  padding-top: 15px;
+  gap: 15px;
 }
 
 .send-pic {
@@ -3276,6 +3397,18 @@ body.dark-mode .strange-info {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 50px;
+}
+
+.modal-buy {
+  max-width: 550px;
+}
+
+.modal-buy_content {
+  padding: 30px 15px;
+}
+
+.modal-buy .buy-remark {
+  padding-bottom: 20px;
 }
 
 .announce {
@@ -3352,6 +3485,15 @@ body.dark-mode .strange-info {
   font-size: 14px;
   margin: 0 0 0 10px;
   color: #909090;
+}
+
+.announce_table .announce_tag {
+  font-size: 14px;
+  padding: 4px 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #D8DFE2 !important;
 }
 
 .factory_country {
@@ -5541,8 +5683,6 @@ body.dark-mode .strange-info {
 }
 
 .invoice_table_num {
-  color: #909090;
-  margin: 0;
   padding: 20px 0;
 }
 
@@ -5560,5 +5700,248 @@ body.dark-mode .strange-info {
 
 .invoice_order .task-card_title {
   width: auto;
+}
+
+.statement_title {
+  color: #906D0F;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.statement_search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.statement_search_form {
+  width: calc(100% - 82px);
+  padding-right: 20px;
+}
+
+.statement_data {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.statement_data_outer {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.statement_data_outer > div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.statement_data_inner {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 30px;
+}
+
+.statement_data_inner > div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.statement_data_item {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.statement_data_title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #797979;
+}
+
+.statement_data_num {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  color: #004F74;
+}
+
+.statement_data_text h2 {
+  margin-top: 2px;
+}
+
+.statement_data_content {
+  font-size: 18px;
+  margin: 0 0 0 15px;
+  color: #606060;
+}
+
+.statement_table .table-common {
+  margin-bottom: 30px;
+}
+
+.statement_table .statement_title {
+  font-size: 20px;
+}
+
+.statistics_filter {
+  background-color: #ECF0F2;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.statistics_filter_main {
+  width: calc(100% - 82px);
+  padding-right: 15px;
+}
+
+.statistics_filter_main h2 {
+  color: #004F74;
+  font-weight: 700;
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+
+.statistics_filter_main ul li {
+  padding: 5px 15px;
+  background-color: #fff;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 15px 5px 0;
+  position: relative;
+}
+
+.statistics_filter_main ul li:hover .statistics_filter_x {
+  opacity: 1;
+}
+
+.statistics_filter_btn {
+  width: 82px;
+}
+
+.statistics_filter_title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8FA4AE;
+}
+
+.statistics_filter_content {
+  font-size: 14px;
+  color: #3E3E3E;
+  position: relative;
+  padding-left: 20px;
+}
+
+.statistics_filter_content::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #D0D0D0;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.statistics_filter_x {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #3BA5D7;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(20%, -30%);
+          transform: translate(20%, -30%);
+  opacity: 0;
+}
+
+.statistics_filter_x > img {
+  width: 60%;
+}
+
+.statistics_filter_x:hover {
+  background-color: #D9B860;
+}
+
+.modal-statistics {
+  max-width: 1000px !important;
+}
+
+.modal-statistics_form {
+  padding: 30px 15px;
+}
+
+.modal-statistics_form .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.modal-statistics_form .row > div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.modal-statistics_form .detail_item {
+  margin-bottom: 20px;
+}
+
+.modal-statistics_form .detail_item_title {
+  color: #557483 !important;
+}
+
+.modal-statistics_range input {
+  width: calc((100% - 78px) / 2);
+}
+
+.modal-statistics_range span {
+  display: block;
+}
+
+.modal-statistics_to {
+  width: 39px;
+  text-align: center;
+}
+
+.modal-statistics_unit {
+  width: 24px;
+  margin-left: 15px;
+}
+
+.modal-statistics_email {
+  padding-top: 35px;
+}
+
+.modal-statistics_technician {
+  display: none;
+}
+
+.modal-statistics_technician.active {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

@@ -801,6 +801,56 @@ a {
     .modal-body {
         padding: 0;
     }
+    &.v-desktop {
+        overflow-y: hidden;
+        .modal-dialog {
+            top: 50%;
+            left: 50%;
+            bottom: inherit;
+            transform: translate(-50%, -50%);
+        }
+        .modal-content {
+            border-radius: 20px;
+            padding: 0 30px;
+        }
+        .modal-header {
+            padding: 20px 0;
+        }
+        .modal-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: $primary-900;
+        }
+        .modal-common_close {
+            svg {
+                width: 24px;
+                height: 24px;
+                path {
+                    stroke: $primary-500;
+                    transition: $transition;
+                }
+            }
+            &:hover {
+                svg {
+                    path {
+                        stroke: $secondary-500;
+                    }
+                }
+            }
+        }
+        .modal-body {
+            max-height: calc(80vh - 71px);
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                background-color: $third-50;
+                width: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $third-200;
+                border-radius: 10px;
+            }
+        }
+    }
 }
 
 .checkbox-item {
@@ -973,6 +1023,11 @@ a {
     &-main {
         padding: 30px 40px 40px;
         padding: 30px 40px 40px 340px;
+        .task-card {
+           .task-card_title {
+            width: auto;
+           } 
+        }
     }
     &-title {
         display: flex;
@@ -1059,16 +1114,42 @@ a {
                 padding-right: 15px;
             }
         }
+        &.leave {
+            td {
+                background-color: $report-lightred;
+            }
+        }
     }
     &_func {
         a {
             text-decoration: underline;
+            color: $primary-900;
+            transition: $transition;
+            &:hover {
+                color: $secondary-900;
+            }
         }
     }
     &_arrow {
         width: 10px;
         margin-left: 5px;
         cursor: pointer;
+    }
+    &.color {
+        &-purple {
+            .table-common_title {
+                th {
+                    background-color: $purple;
+                }
+            }
+        }
+        &-red {
+            .table-common_title {
+                th {
+                    background-color: $red;
+                }
+            }
+        }
     }
 }
 
@@ -1120,6 +1201,15 @@ a {
                 font-weight: 700;
             }
         }
+    }
+}
+
+.list-num {
+    color: $gray-600;
+    margin: 0;
+    padding: 20px 0;
+    p {
+        margin: 0;
     }
 }
 

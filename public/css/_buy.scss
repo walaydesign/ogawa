@@ -77,11 +77,32 @@
         &_date {
             font-size: 14px;
             margin: 0;
+            &.manager-date {
+                color: $third-300 !important;
+            }
         }
         &_status {
             font-size: 14px;
             margin: 0;
             font-weight: 700;
+        }
+        &_head {
+            padding-bottom: 10px;
+            border-bottom: 1px solid $third-50;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        &_technician {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: $primary-900;
+        }
+        &_btn {
+            padding-top: 15px;
+            gap: 15px;
         }
     }
 }
@@ -102,5 +123,15 @@
         font-size: 22px;
         font-weight: 500;
         margin-bottom: 50px;
+    }
+}
+
+.modal-buy {
+    max-width: 550px;
+    &_content {
+        padding: 30px 15px;
+    }
+    .buy-remark {
+        padding-bottom: 20px;
     }
 }
