@@ -1260,6 +1260,53 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+.pagination {
+  padding: 30px 0;
+  gap: 10px;
+}
+
+.pagination_arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+.pagination_arrow svg path {
+  stroke: #C39E3C;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pagination_arrow a:hover svg path {
+  stroke: #2198CE;
+}
+
+.pagination_num a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #EDF9FF;
+  color: #004F74;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pagination_num a:hover, .pagination_num a.active {
+  background-color: #53B8E6;
+  color: #fff;
+  font-weight: 700;
+}
+
 body.light-mode {
   background-color: #fff;
   color: #333333;
@@ -5486,5 +5533,32 @@ body.dark-mode .strange-info {
 .split-money-item input {
   width: calc(100% - 16px - 15px);
   margin-right: 15px;
+}
+
+.invoice_search .order-head_searchForm_date {
+  width: calc(100% - 82px - 20px);
+  margin-right: 20px;
+}
+
+.invoice_table_num {
+  color: #909090;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.invoice_order {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.invoice_order_title {
+  color: #906D0F;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.invoice_order .task-card_title {
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */

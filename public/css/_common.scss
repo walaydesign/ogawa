@@ -1079,5 +1079,49 @@ a {
     background-repeat: no-repeat;
 }
 
+.pagination {
+    padding: 30px 0;
+    gap: 10px;
+    &_arrow {
+        svg {
+            width: 24px;
+            height: 24px;
+            path {
+                stroke: $secondary-600;
+                transition: $transition;
+            }
+        }
+        a {
+            &:hover {
+                svg {
+                    path {
+                        stroke: $primary-600;
+                    }
+                }
+            }
+        }
+    }
+    &_num {
+        a {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary-50;
+            color: $primary-900;
+            font-size: 14px;
+            font-weight: 500;
+            transition: $transition;
+            &:hover, &.active {
+                background-color: $primary-400;
+                color: #fff;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
 
 

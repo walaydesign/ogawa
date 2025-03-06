@@ -1,0 +1,28 @@
+.invoice {
+    &_search {
+        .order-head_searchForm_date {
+            width: calc(100% - 82px - 20px);
+            margin-right: 20px;
+        }
+    }
+    &_table {
+        &_num {
+            color: $gray-600;
+            margin: 0;
+            padding: 20px 0;
+        }
+    }
+    &_order {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        &_title {
+            color: $secondary-800;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .task-card_title {
+            width: auto;
+        }
+    }
+}
