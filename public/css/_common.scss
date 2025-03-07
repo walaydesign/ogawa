@@ -74,7 +74,6 @@ body {
 
 * {
     box-sizing: border-box;
-    // transition: $transition;
 }
 
 input, button, textarea, select {
@@ -1057,8 +1056,9 @@ a {
             display: block;
             padding: 10px 0 13px;
             position: relative;
-            color: $third-300;
+            color: $third-300 !important;
             transition: $transition;
+            cursor: pointer;
             &::after {
                 position: absolute;
                 content: "";
@@ -1072,11 +1072,34 @@ a {
                 transition: $transition;
             }
             &.active, &:hover {
-                color: $primary-800;
+                color: $primary-800 !important;
                 font-weight: 700;
                 &::after {
                     opacity: 1;
                 }
+            }
+        }
+        &-factory {
+            position: sticky;
+            top: 70px;
+            background-color: $gray-50;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 40px;
+                height: 47px;
+                background-color: $gray-50;
+                top: 0;
+                left: -40px;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 40px;
+                height: 63px;
+                background-color: $gray-50;
+                top: 0;
+                right: -40px;
             }
         }
     }

@@ -55,3 +55,38 @@ $(".detail_pic_item").click(function() {
     $(".detail_pic-popup").fadeIn(300).addClass("active");
     swiperPopup.slideTo(index, 1000, true);
 })
+
+
+$(".announce-select_area").find(".input-chechbox").change(function() {
+    if($(this).is(':checked')) {
+        $(this).parents(".announce-select_item").find(".announce-select_name").find(".input-chechbox").prop("checked",true);
+    }else {
+        $(this).parents(".announce-select_item").find(".announce-select_name").find(".input-chechbox").prop("checked",false);
+    }
+})
+
+$(".announce-select_title").click(function() {
+    if($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(".announce-select_content").slideUp(300);
+    }else {
+        $(this).addClass("active");
+        $(".announce-select_content").slideDown(300);
+    }
+})
+
+
+$(".factory-manager_phone_add").click(function() {
+    let phoneInfo = $("<div class='row'><div class='col-4'><input type='text' class='detail_item_input w-100' placeholder='請輸入門市'></div><div class='col-8'><input type='text' class='detail_item_input w-100' placeholder='請輸入電話'></div></div>");
+    $(".factory-manager_phone").append(phoneInfo);
+})
+
+$(".order_detail_collaspe").find(".order_detail_report_title").click(function() {
+    if($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).parents(".order_detail_collaspe").find(".order_detail_report_content").slideUp(300);
+    }else {
+        $(this).addClass("active");
+        $(this).parents(".order_detail_collaspe").find(".order_detail_report_content").slideDown(300);
+    }
+})

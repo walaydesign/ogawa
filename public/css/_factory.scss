@@ -66,6 +66,138 @@
             }
         }
     }
+    &-manager {
+        padding-top: 30px;
+        &_country {
+            padding-top: 10px;
+            .row {
+                margin-left: -12px;
+                margin-right: -12px;
+                >div {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                }
+            }
+        }
+        &_countryName {
+            margin-bottom: 13px;
+            font-size: 20px;
+            font-weight: 700;
+            color: $secondary-800;
+        }
+        &_item {
+            padding: 15px 20px;
+            background-color: #fff;
+            border-radius: 17px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        &_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 13px;
+            border-bottom: 1px solid $gray-100;
+            .factory_list {
+                &_text {
+                    display: flex;
+                    align-items: center;
+                    width: auto;
+                    h3 {
+                        margin-left: 8px;
+                        font-size: 16px;
+                    }
+                }
+                &_brand {
+                    margin: 0;
+                }
+            }
+        }
+        &_info {
+            padding-top: 13px;
+            &_item {
+                display: flex;
+                margin-bottom: 13px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &_title {
+                width: 80px;
+                color: $primary-800;
+                font-size: 16px;
+                font-weight: 500;
+                margin: 2px 0 0;
+            }
+            &_content {
+                width: calc(100% - 80px);
+                padding-left: 15px;
+                p {
+                    margin: 0;
+                    font-size: 16px;
+                    color: $gray-800;
+                }
+                ul {
+                    li {
+                        margin: 0;
+                        font-size: 16px;
+                        color: $gray-800;
+                        margin-bottom: 8px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &_logo {
+            width: 145px;
+            height: 67px;
+            position: relative;
+            background-color: #fff;
+            border-radius: 13px;
+            border: 1px solid $third-100;
+            margin-right: 20px;
+            >img {
+                position: absolute;
+                width: 80%;
+                height: 80%;
+                object-fit: contain;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &_phone {
+            >.row {
+                margin-bottom: 20px;
+            }
+            &_add {
+                width: 45px;
+                height: 45px;
+                padding: 0;
+                border-radius: 50%;
+                background-color: $secondary-200;
+                transition: $transition;
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    path {
+                        transition: $transition;
+                        stroke: $secondary-900;
+                    }
+                }
+                &:hover {
+                    background-color: $primary-400;
+                    svg {
+                        path {
+                            stroke: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .modal-call {

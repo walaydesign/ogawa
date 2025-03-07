@@ -88,12 +88,12 @@
         <div class="inner">
             <nav class="manager-nav">
                 <ul>
-                    <li><a href="./order-all.html" class="active">訂單查詢</a></li>
+                    <li><a href="./order-all.html">訂單查詢</a></li>
                     <li><a href="./invoice.html">發票</a></li>
                     <li><a href="./statistics.html">統計</a></li>
                     <li><a href="./buy-notsend.html">物品申購管理</a></li>
                     <li><a href="./announce.html">跑馬燈管理</a></li>
-                    <li><a href="./factory.html">原廠資訊管理</a></li>
+                    <li><a href="./factory.html" class="active">原廠資訊管理</a></li>
                 </ul>
                 <p class="manager-nav_copyright">版權所有©2024 小川職人</p>
             </nav>
@@ -105,134 +105,77 @@
                                 <path d="M15 18L9 12L15 6" stroke="#004F74" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                        <h1>機器名稱</h1>
-                        <p class="machine-num">AZ123456</p>
-                    </div>
-                    <div class="manager-title_btn d-flex align-items-center">
-                        <a href="./order-edit-normal-done.html" class="btn-icon-border-blue">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.16446 16.3488C3.97246 16.3488 3.78083 16.2757 3.63421 16.1291C3.34133 15.8362 3.34133 15.3614 3.63421 15.0686L15.3545 3.34832C15.647 3.05544 16.1221 3.05544 16.415 3.34832C16.7078 3.64119 16.7078 4.11594 16.415 4.40882L4.69471 16.1291C4.54846 16.2753 4.35646 16.3488 4.16446 16.3488Z" fill="black"/>
-                                <path d="M3.00636 21.75C2.95424 21.75 2.90136 21.7444 2.84849 21.7332C2.44349 21.6462 2.18549 21.2475 2.27249 20.8425L3.43124 15.4414C3.51824 15.0364 3.91874 14.7792 4.32186 14.8654C4.72686 14.9524 4.98486 15.351 4.89786 15.756L3.73911 21.1572C3.66374 21.5093 3.35249 21.75 3.00636 21.75Z" fill="black"/>
-                                <path d="M8.40664 20.5912C8.21464 20.5912 8.02302 20.5181 7.87639 20.3715C7.58352 20.0786 7.58352 19.6039 7.87639 19.311L19.5966 7.59112C19.8891 7.29824 20.3643 7.29824 20.6571 7.59112C20.95 7.88399 20.95 8.35874 20.6571 8.65162L8.93727 20.3715C8.79064 20.5181 8.59864 20.5912 8.40664 20.5912Z" fill="black"/>
-                                <path d="M3.00488 21.75C2.65876 21.75 2.34788 21.5092 2.27213 21.1571C2.18551 20.7521 2.44313 20.3535 2.84813 20.2665L8.24926 19.1077C8.65463 19.0218 9.05326 19.2791 9.13988 19.6837C9.22651 20.0887 8.96888 20.4873 8.56388 20.5743L3.16276 21.7331C3.10988 21.7447 3.05701 21.75 3.00488 21.75Z" fill="black"/>
-                                <path d="M18.0057 10.9924C17.8137 10.9924 17.6217 10.9193 17.4755 10.7727L13.2331 6.53028C12.9402 6.2374 12.9402 5.76265 13.2331 5.46978C13.5256 5.1769 14.0011 5.1769 14.2936 5.46978L18.536 9.71215C18.8288 10.005 18.8288 10.4798 18.536 10.7727C18.3897 10.9193 18.1977 10.9924 18.0057 10.9924Z" fill="black"/>
-                                <path d="M20.1271 8.87135C19.9351 8.87135 19.7431 8.79822 19.5964 8.6516C19.3036 8.35872 19.3036 7.88397 19.5964 7.59072C20.0138 7.17335 20.2437 6.60822 20.2437 5.99997C20.2437 5.39172 20.0138 4.8266 19.5964 4.40922C19.1787 3.99147 18.6136 3.7616 18.0053 3.7616C17.3971 3.7616 16.8319 3.99147 16.4146 4.40922C16.1221 4.7021 15.6473 4.70247 15.3537 4.40922C15.0608 4.11635 15.0608 3.6416 15.3537 3.34835C16.0542 2.64747 16.9958 2.2616 18.0053 2.2616C19.0144 2.2616 19.9564 2.64747 20.6569 3.34835C21.3578 4.04885 21.7437 4.99047 21.7437 5.99997C21.7437 7.00947 21.3578 7.9511 20.6569 8.6516C20.5111 8.79785 20.3191 8.87135 20.1271 8.87135Z" fill="black"/>
-                            </svg>
-                            <span>編輯回報</span>
-                        </a>
+                        <h1>原廠名稱</h1>
                     </div>
                 </div>
                 <div class="order_detail">
-                    <div class="report-tag">已服務</div>
                     <div class="row">
                         <div class="col-12">
-                            <div class="detail_item d-flex">
-                                <h2 class="detail_item_title">回報日期</h2>
-                                <p class="detail_item_content">2024/11/01</p>
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">Logo</h2>
+                                <div class="d-flex align-items-center">
+                                    <div class="factory-manager_logo"><img src="../public/img/logo-gray.png" alt=""></div>
+                                    <button class="btn-border-blue btn-upload">
+                                        上傳
+                                        <input type="file">
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="detail_item d-flex">
-                                <h2 class="detail_item_title">品牌</h2>
-                                <p class="detail_item_content">國際Panasonic</p>
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">品牌名稱</h2>
+                                <input type="text" class="detail_item_input w-100" placeholder="請輸入">
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="detail_item d-flex">
-                                <h2 class="detail_item_title">型號</h2>
-                                <p class="detail_item_content">AB123456</p>
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">國家</h2>
+                                <select name="" class="detail_item_select w-100" id="">
+                                    <option value="">請選擇</option>
+                                    <option value="">日本品牌</option>
+                                    <option value="">台灣品牌</option>
+                                    <option value="">韓國品牌</option>
+                                    <option value="">歐美品牌</option>
+                                    <option value="">中國品牌</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="detail_item d-flex">
-                                <h2 class="detail_item_title">安裝位置</h2>
-                                <p class="detail_item_content">主臥</p>
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">網站連結</h2>
+                                <input type="text" class="detail_item_input w-100" placeholder="請輸入">
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="task-detail_remark mb-3">
-                                <h4>備註</h4>
-                                <p>輪輕人信銷良下錯我率性，有定是子人</p>
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">電話</h2>
+                                <div class="factory-manager_phone">
+                                    <div class="row">
+                                        <div class="col-4"><input type="text" class="detail_item_input w-100" placeholder="請輸入門市"></div>
+                                        <div class="col-8"><input type="text" class="detail_item_input w-100" placeholder="請輸入電話"></div>
+                                    </div>
+                                </div>
+                                <button class="factory-manager_phone_add">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 3.75V14.25" stroke="#004F74" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.75 9H14.25" stroke="#004F74" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="order_detail_pic">
-                                <div class="d-flex align-items-center justify-content-between mb-2">
-                                    <h4>照片</h4>
-                                    <button class="btn-icon-border-blue"><span>複製位址</span></button>
-                                </div>
-                                <div class="detail_pic view">
-                                    <div class="detail_pic_item"><img src="../public/img/pic-1.png" alt=""></div>
-                                    <div class="detail_pic_item"><img src="../public/img/pic-2.png" alt=""></div>
-                                    <div class="detail_pic_item"><img src="../public/img/pic-3.png" alt=""></div>
-                                    <div class="detail_pic_item"><img src="../public/img/pic-4.png" alt=""></div>
-                                    <div class="detail_pic_item"><img src="../public/img/pic-5.png" alt=""></div>
-                                    <div class="detail_pic_item"><img src="../public/img/pic-6.png" alt=""></div>
-                                    <div class="detail_pic_item"><img src="../public/img/pic-7.png" alt=""></div>
-                                </div>
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">備註</h2>
+                                <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea" required></textarea>
                             </div>
                         </div>
                     </div>
+                    <a href="" class="btn-gradient w-fit mx-auto d-block">確定</a>
                 </div>
             </div>
         </div>
     </main>
-
-    <div class="detail_pic-popup">
-        <div class="detail_pic-popup_bg"></div>
-        <div class="detail_pic-popup_main">
-            <div class="detail_pic-popup-prev detail_pic-popup_arrow">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 18L9 12L15 6" stroke="#004F74" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="swiper-container detail_pic-popup_swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="detail_pic-popup_item">
-                            <img src="../public/img/pic-1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="detail_pic-popup_item">
-                            <img src="../public/img/pic-2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="detail_pic-popup_item">
-                            <img src="../public/img/pic-3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="detail_pic-popup_item">
-                            <img src="../public/img/pic-4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="detail_pic-popup_item">
-                            <img src="../public/img/pic-5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="detail_pic-popup_item">
-                            <img src="../public/img/pic-6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="detail_pic-popup_item">
-                            <img src="../public/img/pic-7.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="btn-bg-blue">複製圖片網址</button>
-            <div class="detail_pic-popup-next detail_pic-popup_arrow">
-                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.5 15.5L12.5 10.5L7.5 5.5" stroke="#AB882A" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-        </div>
-    </div>
 
     <script src="../public/js/jquery/jquery.min.js"></script>
     <script src="../public/js/bootstrap/bootstrap.bundle.min.js"></script>

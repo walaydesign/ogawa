@@ -240,15 +240,21 @@
             background-color: $secondary-50;
             margin-bottom: 30px;
             &_title {
-                padding-bottom: 17px;
-                border-bottom: 1px solid $gray-300;
-                margin-bottom: 17px;
+                // padding-bottom: 17px;
+                // border-bottom: 1px solid $gray-300;
+                // margin-bottom: 17px;
                 h3 {
                     margin: 0;
                     font-size: 18px;
                     font-weight: 700;
                     color: $primary-800;
+                    transition: $transition;
                 }
+            }
+            &_content {
+                padding-top: 17px;
+                border-top: 1px solid $gray-300;
+                margin-top: 17px;
             }
             .task {
                 &-detail {
@@ -382,6 +388,60 @@
             padding: 10px 15px;
             font-size: 16px;
             background-color: #fff;
+        }
+        &_arrow {
+            width: 24px;
+            height: 24px;
+            transition: $transition;
+            path {
+                stroke: $gray-900;
+                transition: $transition;
+            }
+        }
+        &_collaspe {
+            .order_detail_report {
+                &_title {
+                    cursor: pointer;
+                    &:hover {
+                        h3 {
+                            color: $secondary-900;
+                        }
+                        .order_detail_arrow {
+                            transform: scale(1.2);
+                            path {
+                                stroke-width: 3px;
+                            }
+                        }
+                    }
+                    &.active {
+                        .order_detail_arrow {
+                            transform: scaleY(-1);
+                        }
+                    }
+                }
+                &_content {
+                    display: none;
+                }
+            }
+        }
+        &_contact {
+            display: flex;
+            align-items: center;
+            margin-bottom: 13px;
+            &_date {
+                font-size: 14px;
+                margin: 0;
+                color: $gray-500;
+                width: 80px;
+            }
+            &_content {
+                width: calc(100% - 80px);
+                padding-left: 15px;
+                margin: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }
