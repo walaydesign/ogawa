@@ -121,9 +121,9 @@
                         <div class="col-4">
                             <div class="detail_item">
                                 <h2 class="detail_item_title mb-1">是否返修</h2>
-                                <select name="" id="" class="detail_item_select w-100 input-datepick">
-                                    <option value="">是</option>
-                                    <option value="" selected>否</option>
+                                <select name="" id="" class="detail_item_select whethertorepair w-100 input-datepick">
+                                    <option value="是">是</option>
+                                    <option value="否" selected>否</option>
                                 </select>
                             </div>
                         </div>
@@ -293,6 +293,13 @@
             $( "#end-time" ).datepicker();
             $( "#follow-time" ).datepicker();
         } );
+        $(".whethertorepair").change(function() {
+            if($(this).val() == "是") {
+                console.log("repair");
+                let url = "./machine-return-repair.html";
+                window.location.assign(url);
+            }
+        })
     </script>
 </body>
 </html>
