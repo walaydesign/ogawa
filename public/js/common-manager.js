@@ -90,3 +90,17 @@ $(".order_detail_collaspe").find(".order_detail_report_title").click(function() 
         $(this).parents(".order_detail_collaspe").find(".order_detail_report_content").slideDown(300);
     }
 })
+
+
+// 技師選擇
+$(".technician-select-area").change(function() {
+    if($(this).val() === "北北基") {
+        $(this).parents(".technician-select-wrap").find(".technician-north").addClass("active").siblings(".technician-select").removeClass("active");
+    }else if($(this).val() === "桃竹苗") {
+        $(this).parents(".technician-select-wrap").find(".technician-taochumiao").addClass("active").siblings(".technician-select").removeClass("active");
+    }else if($(this).val() === "中區") {
+        $(this).parents(".technician-select-wrap").find(".technician-middle").addClass("active").siblings(".technician-select").removeClass("active");
+    }else if($(this).val() === "南區") {
+        $(this).parents(".technician-select-wrap").find(".technician-south").addClass("active").siblings(".technician-select").removeClass("active");
+    }
+})

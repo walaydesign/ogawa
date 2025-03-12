@@ -116,10 +116,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="order-head_searchForm d-flex align-items-center statement_search">
+                <div class="order-head_searchForm d-flex align-items-end statement_search">
                     <div class="statement_search_form">
                         <div class="row m-0">
                             <div class="col-6">
+                                <label for="" class="order-head_searchForm_label">時間區間</label>
                                 <div class="order-head_searchForm_date">
                                     <input type="text" id="datepicker-from" class="order-head_searchForm_input datepick input-datepick" placeholder="開始日期">
                                     <span>~</span>
@@ -127,13 +128,66 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <select name="" id="" class="order-head_searchForm_select">
-                                    <option value="">選擇技師</option>
-                                </select>
+                                <label for="" class="order-head_searchForm_label">技師</label>
+                                <div class="row technician-select-wrap">
+                                    <div class="col-6">
+                                        <select name="" id="" class="order-head_searchForm_select technician-select-area">
+                                            <option value="">請選擇</option>
+                                            <option value="北北基">北北基</option>
+                                            <option value="桃竹苗">桃竹苗</option>
+                                            <option value="中區">中區</option>
+                                            <option value="南區">南區</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <select name="" id="" class="order-head_searchForm_select technician-select technician-north active">
+                                            <option value="">請選擇</option>
+                                            <option value="">米</option>
+                                            <option value="">忠</option>
+                                            <option value="">鋒</option>
+                                            <option value="">簡</option>
+                                            <option value="">丞</option>
+                                            <option value="">潘</option>
+                                            <option value="">瀚</option>
+                                            <option value="">偉</option>
+                                            <option value="">保</option>
+                                            <option value="">忻</option>
+                                            <option value="">豪</option>
+                                            <option value="">蔡</option>
+                                            <option value="">源</option>
+                                        </select>
+                                        <select name="" id="" class="order-head_searchForm_select technician-select technician-taochumiao">
+                                            <option value="">請選擇</option>
+                                            <option value="">守</option>
+                                            <option value="">昌</option>
+                                            <option value="">生</option>
+                                            <option value="">銘</option>
+                                            <option value="">曄</option>
+                                            <option value="">傑</option>
+                                            <option value="">凡</option>
+                                        </select>
+                                        <select name="" id="" class="order-head_searchForm_select technician-select technician-middle">
+                                            <option value="">請選擇</option>
+                                            <option value="">達</option>
+                                            <option value="">田</option>
+                                            <option value="">旭</option>
+                                        </select>
+                                        <select name="" id="" class="order-head_searchForm_select technician-select technician-south">
+                                            <option value="">請選擇</option>
+                                            <option value="">連</option>
+                                            <option value="">憲</option>
+                                            <option value="">磬</option>
+                                            <option value="">宗</option>
+                                            <option value="">曹</option>
+                                            <option value="">晨</option>
+                                            <option value="">民</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="btn-bg-blue ms-auto d-block">搜尋</button>
+                    <button class="btn-bg-blue ms-auto d-block mb-1">搜尋</button>
                 </div>
                 <div class="statement_data">
                     <div class="row statement_data_outer">

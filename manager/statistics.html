@@ -828,9 +828,9 @@
                             <div class="col-12">
                                 <div class="detail_item">
                                     <h2 class="detail_item_title mb-1">技師</h2>
-                                    <div class="row">
+                                    <div class="row technician-select-wrap">
                                         <div class="col-6">
-                                            <select name="" id="" class="detail_item_select modal-statistics_technicianArea">
+                                            <select name="" id="" class="detail_item_select technician-select-area">
                                                 <option value="">請選擇</option>
                                                 <option value="北北基">北北基</option>
                                                 <option value="桃竹苗">桃竹苗</option>
@@ -839,7 +839,7 @@
                                             </select>
                                         </div>
                                         <div class="col-6">
-                                            <select name="" id="" class="detail_item_select modal-statistics_technician technician-north active">
+                                            <select name="" id="" class="detail_item_select technician-select technician-north active">
                                                 <option value="">請選擇</option>
                                                 <option value="">米</option>
                                                 <option value="">忠</option>
@@ -855,7 +855,7 @@
                                                 <option value="">蔡</option>
                                                 <option value="">源</option>
                                             </select>
-                                            <select name="" id="" class="detail_item_select modal-statistics_technician technician-taochumiao">
+                                            <select name="" id="" class="detail_item_select technician-select technician-taochumiao">
                                                 <option value="">請選擇</option>
                                                 <option value="">守</option>
                                                 <option value="">昌</option>
@@ -865,13 +865,13 @@
                                                 <option value="">傑</option>
                                                 <option value="">凡</option>
                                             </select>
-                                            <select name="" id="" class="detail_item_select modal-statistics_technician technician-middle">
+                                            <select name="" id="" class="detail_item_select technician-select technician-middle">
                                                 <option value="">請選擇</option>
                                                 <option value="">達</option>
                                                 <option value="">田</option>
                                                 <option value="">旭</option>
                                             </select>
-                                            <select name="" id="" class="detail_item_select modal-statistics_technician technician-south">
+                                            <select name="" id="" class="detail_item_select technician-select technician-south">
                                                 <option value="">請選擇</option>
                                                 <option value="">連</option>
                                                 <option value="">憲</option>
@@ -1065,17 +1065,7 @@
             $( "#datepicker-to" ).datepicker();
         } );
 
-        $(".modal-statistics_technicianArea").change(function() {
-            if($(this).val() === "北北基") {
-                $(".technician-north").addClass("active").siblings(".modal-statistics_technician").removeClass("active");
-            }else if($(this).val() === "桃竹苗") {
-                $(".technician-taochumiao").addClass("active").siblings(".modal-statistics_technician").removeClass("active");
-            }else if($(this).val() === "中區") {
-                $(".technician-middle").addClass("active").siblings(".modal-statistics_technician").removeClass("active");
-            }else if($(this).val() === "南區") {
-                $(".technician-south").addClass("active").siblings(".modal-statistics_technician").removeClass("active");
-            }
-        })
+        
     </script>
 </body>
 </html>

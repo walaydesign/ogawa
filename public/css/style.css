@@ -1425,6 +1425,14 @@ a:hover {
   margin: 0;
 }
 
+.technician-select {
+  display: none;
+}
+
+.technician-select.active {
+  display: block;
+}
+
 body.light-mode {
   background-color: #fff;
   color: #333333;
@@ -3407,6 +3415,22 @@ body.dark-mode .strange-info {
   gap: 15px;
 }
 
+.buy_input {
+  margin-bottom: 45px;
+}
+
+.buy_input label {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: block;
+  color: #004F74;
+}
+
+.buy_input input {
+  width: 100%;
+}
+
 .send-pic {
   padding-top: 20px;
   margin: 0 auto 15px;
@@ -3436,7 +3460,7 @@ body.dark-mode .strange-info {
 }
 
 .modal-buy .buy-remark {
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .announce {
@@ -5348,13 +5372,13 @@ body.dark-mode .strange-info {
   display: none;
 }
 
-.order-head_searchForm .row {
+.order-head_searchForm > .row {
   margin-left: -10px;
   margin-right: -10px;
   margin-bottom: 18px;
 }
 
-.order-head_searchForm .row > div {
+.order-head_searchForm > .row > div {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -5384,6 +5408,10 @@ body.dark-mode .strange-info {
   color: #D2D2D2;
 }
 
+.order-head_searchForm_input.blur-address {
+  display: none;
+}
+
 .order-head_searchForm_select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -5411,6 +5439,14 @@ body.dark-mode .strange-info {
   display: block;
   width: 36px;
   text-align: center;
+}
+
+.order-head_searchForm_label {
+  margin-bottom: 8px;
+  color: #557483;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
 }
 
 .order_list {

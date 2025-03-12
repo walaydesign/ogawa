@@ -105,6 +105,19 @@
             gap: 15px;
         }
     }
+    &_input {
+        margin-bottom: 45px;
+        label {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            display: block;
+            color: $primary-900;
+        }
+        input {
+            width: 100%;
+        }
+    }
 }
 
 .send {
@@ -132,6 +145,6 @@
         padding: 30px 15px;
     }
     .buy-remark {
-        padding-bottom: 20px;
+        padding-bottom: 0;
     }
 }

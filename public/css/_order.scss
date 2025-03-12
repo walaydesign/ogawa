@@ -55,7 +55,7 @@
             background-color: $third-50;
             margin-top: 10px;
             display: none;
-            .row {
+            >.row {
                 margin-left: -10px;
                 margin-right: -10px;
                 margin-bottom: 18px;
@@ -73,6 +73,11 @@
                 padding: 0 12px;
                 &::placeholder {
                     color: $gray-300;
+                }
+            }
+            &_input {
+                &.blur-address {
+                    display: none;
                 }
             }
             &_select {
@@ -93,6 +98,13 @@
                     width: 36px;
                     text-align: center;
                 }
+            }
+            &_label {
+                margin-bottom: 8px;
+                color: $third-500;
+                font-size: 14px;
+                font-weight: 500;
+                display: block;
             }
         }
     }
