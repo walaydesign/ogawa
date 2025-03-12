@@ -23,6 +23,11 @@
             display: flex;
             align-items: center;
             margin-bottom: 15px;
+            flex-wrap: wrap;
+            .task-card_remark {
+                width: 100%;
+                margin-top: 15px;
+            }
         }
         &_text {
             width: calc(100% - 70px);

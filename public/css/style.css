@@ -3665,6 +3665,13 @@ body.dark-mode .strange-info {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory_list_item .task-card_remark {
+  width: 100%;
+  margin-top: 15px;
 }
 
 .factory_list_text {
