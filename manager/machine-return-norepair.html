@@ -112,7 +112,7 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">選擇機器</h2>
+                                <h2 class="detail_item_title mb-1">選擇機器<span class="highlight">*</span></h2>
                                 <select name="" id="" class="detail_item_select w-100 input-datepick">
                                     <option value="">AZ123456</option>
                                 </select>
@@ -120,7 +120,7 @@
                         </div>
                         <div class="col-4">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">是否返修</h2>
+                                <h2 class="detail_item_title mb-1">是否返修<span class="highlight">*</span></h2>
                                 <select name="" id="" class="detail_item_select whethertorepair w-100 input-datepick">
                                     <option value="是">是</option>
                                     <option value="否" selected>否</option>
@@ -129,7 +129,7 @@
                         </div>
                         <div class="col-4">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">再追蹤日</h2>
+                                <h2 class="detail_item_title mb-1">再追蹤日<span class="highlight">*</span></h2>
                                 <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="follow-time">
                             </div>
                         </div>
@@ -223,43 +223,43 @@
                                 <div class="detail_pic uploading">
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-1.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-2.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-3.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-4.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-5.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-6.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-7.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
@@ -275,6 +275,23 @@
                     </div>
                     <a href="" class="btn-gradient w-fit mx-auto mt-4">確定</a>
                 </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-manager" id="delete-photo" tabindex="-1" aria-labelledby="delete-photoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="delete-photoLabel">刪除照片</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>確定要刪除照片嗎？</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-gradient modal_confirmBtn">確定</button>
+                </div>
+              </div>
             </div>
         </div>
     </main>

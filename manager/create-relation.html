@@ -129,22 +129,23 @@
                 </div>
                 <div class="order-head_searchForm">
                     <div class="row">
-                        <div class="col-6">
-                            <input type="phone" class="order-head_searchForm_input" placeholder="電話">
-                        </div>
-                        <div class="col-6">
-                            <input type="text" class="order-head_searchForm_input" placeholder="ID">
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="col-2">
-                            <select name="" id="" class="order-head_searchForm_select">
-                                <option value="">關鍵搜尋</option>
-                                <option value="">模糊搜尋</option>
+                            <select name="" id="" class="order-head_searchForm_select order-all-select">
+                                <option value="關聯搜尋">關聯搜尋</option>
+                                <option value="模糊搜尋">模糊搜尋</option>
                             </select>
                         </div>
                         <div class="col-10">
-                            <input type="text" class="order-head_searchForm_input" placeholder="地址">
+                            <input type="text" class="order-head_searchForm_input related-address" placeholder="請輸入完整地址">
+                            <input type="text" class="order-head_searchForm_input blur-address" placeholder="請輸入五個字以上的部份地址，需包含數字">
+                        </div>
+                    </div>
+                    <div class="row related-phoneid">
+                        <div class="col-6">
+                            <input type="phone" class="order-head_searchForm_input" placeholder="請輸入完整電話">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="order-head_searchForm_input" placeholder="請輸入完整ID">
                         </div>
                     </div>
                     <button class="btn-bg-blue ms-auto d-block">搜尋</button>

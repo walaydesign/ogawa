@@ -495,8 +495,25 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn-delete">作廢</button>
+                    <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#delete-invoice">作廢</button>
                 </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-manager" id="delete-invoice" tabindex="-1" aria-labelledby="delete-invoiceLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="delete-invoiceLabel">發票作廢</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>確定要作廢嗎？</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-gradient modal_confirmBtn">確定</button>
+                </div>
+              </div>
             </div>
         </div>
     </main>

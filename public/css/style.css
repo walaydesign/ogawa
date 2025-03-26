@@ -1433,6 +1433,51 @@ a:hover {
   display: block;
 }
 
+.modal-manager .modal-dialog {
+  margin-top: 100px;
+}
+
+.modal-manager .modal-content {
+  border-radius: 20px;
+  border: 0;
+  -webkit-box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.modal-manager .modal-header {
+  padding: 0 0 15px;
+  border-color: #ECF0F2;
+  margin-bottom: 15px;
+}
+
+.modal-manager .modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #004F74;
+}
+
+.modal-manager .modal-body {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.modal-manager .modal-body p {
+  margin: 0;
+}
+
+.modal-manager .modal-footer {
+  border: 0;
+  padding: 15px 0 0;
+}
+
+.modal-manager .modal_confirmBtn {
+  padding: 10px 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 body.light-mode {
   background-color: #fff;
   color: #333333;
@@ -3564,6 +3609,16 @@ body.dark-mode .strange-info {
   font-size: 16px;
 }
 
+.announce-manager .order-head_searchForm {
+  margin-bottom: 30px;
+}
+
+.announce-manager .order-head_searchForm_label {
+  color: #557483;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .announce-select {
   display: block !important;
   margin-bottom: 30px;
@@ -5302,15 +5357,15 @@ body.dark-mode .strange-info {
 }
 
 .strange-info {
-  padding: 15px;
+  padding: 15px 15px 5px;
   border-radius: 20px;
   margin-bottom: 30px;
   -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
 }
 
-.strange-info .detail_item:last-child {
-  margin-bottom: 0;
+.strange-info .detail_item {
+  margin-bottom: 10px !important;
 }
 
 .order-head_searchBtn {

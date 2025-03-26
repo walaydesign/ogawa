@@ -112,7 +112,7 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">申訴時間</h2>
+                                <h2 class="detail_item_title mb-1">申訴時間<span class="highlight">*</span></h2>
                                 <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="report-time">
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                         </div>
                         <div class="col-12">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">客戶回報</h2>
+                                <h2 class="detail_item_title mb-1">客戶回報<span class="highlight">*</span></h2>
                                 <div class="d-flex align-items-center order_detail_checkbox">
                                     <div class="d-flex align-items-center input-chechbox-wrap">
                                         <input type="checkbox" class="input-chechbox" id="late">
@@ -165,7 +165,7 @@
                         </div>
                         <div class="col-12">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">溝通結果</h2>
+                                <h2 class="detail_item_title mb-1">溝通結果<span class="highlight">*</span></h2>
                                 <div class="d-flex align-items-center order_detail_checkbox">
                                     <div class="d-flex align-items-center input-chechbox-wrap">
                                         <input type="checkbox" class="input-chechbox" id="late">
@@ -180,7 +180,7 @@
                         </div>
                         <div class="col-12">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">處理方案</h2>
+                                <h2 class="detail_item_title mb-1">處理方案<span class="highlight">*</span></h2>
                                 <div class="d-flex align-items-center order_detail_checkbox">
                                     <div class="d-flex align-items-center input-chechbox-wrap">
                                         <input type="checkbox" class="input-chechbox" id="late">
@@ -217,43 +217,43 @@
                                 <div class="detail_pic uploading">
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-1.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-2.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-3.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-4.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-5.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-6.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="detail_pic_item">
                                         <img src="../public/img/pic-7.png" alt="">
-                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-confirm">
+                                        <div class="detail_pic_x" data-bs-toggle="modal" data-bs-target="#delete-photo">
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
@@ -262,13 +262,30 @@
                         </div>
                         <div class="col-12">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">客服意見/檢討</h2>
+                                <h2 class="detail_item_title mb-1">客服意見/檢討<span class="highlight">*</span></h2>
                                 <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea" required></textarea>
                             </div>
                         </div>
                     </div>
                     <a href="" class="btn-gradient w-fit mx-auto">確定</a>
                 </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-manager" id="delete-photo" tabindex="-1" aria-labelledby="delete-photoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="delete-photoLabel">刪除照片</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>確定要刪除照片嗎？</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-gradient modal_confirmBtn">確定</button>
+                </div>
+              </div>
             </div>
         </div>
     </main>

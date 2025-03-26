@@ -108,7 +108,7 @@
                         <h1>冷4+3滾1 / 米心</h1>
                     </div>
                     <div class="manager-title_btn d-flex align-items-center">
-                        <button class="btn-icon-border-blue">
+                        <button class="btn-icon-border-blue" data-bs-toggle="modal" data-bs-target="#cancel-relation">
                             <span>取消關聯</span>
                         </button>
                         <a href="./order-detail-edit.html" class="btn-icon-border-blue">
@@ -484,6 +484,23 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-manager" id="cancel-relation" tabindex="-1" aria-labelledby="cancel-relationLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="cancel-relationLabel">取消關聯</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>確定要取消關聯嗎？</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-gradient modal_confirmBtn">確定</button>
+                </div>
+              </div>
             </div>
         </div>
     </main>

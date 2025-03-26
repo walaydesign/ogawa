@@ -113,7 +113,7 @@
                         <div class="task-card_head">
                             <div class="d-flex align-items-center justify-content-between">
                                 <h2 class="task-card_title">冷4+3滾1 </h2>
-                                <button class="btn-icon-border-blue"><span>取消關聯</span></button>
+                                <button class="btn-icon-border-blue" data-bs-toggle="modal" data-bs-target="#cancel-relation"><span>取消關聯</span></button>
                             </div>
                         </div>
                         <div class="task-info">
@@ -224,7 +224,7 @@
                         <div class="task-card_head">
                             <div class="d-flex align-items-center justify-content-between">
                                 <h2 class="task-card_title">冷4+3滾1 </h2>
-                                <button class="btn-icon-border-blue"><span>取消關聯</span></button>
+                                <button class="btn-icon-border-blue" data-bs-toggle="modal" data-bs-target="#cancel-relation"><span>取消關聯</span></button>
                             </div>
                         </div>
                         <div class="task-info">
@@ -335,7 +335,7 @@
                         <div class="task-card_head">
                             <div class="d-flex align-items-center justify-content-between">
                                 <h2 class="task-card_title">冷4+3滾1 </h2>
-                                <button class="btn-icon-border-blue"><span>取消關聯</span></button>
+                                <button class="btn-icon-border-blue" data-bs-toggle="modal" data-bs-target="#cancel-relation"><span>取消關聯</span></button>
                             </div>
                         </div>
                         <div class="task-info">
@@ -446,7 +446,7 @@
                         <div class="task-card_head">
                             <div class="d-flex align-items-center justify-content-between">
                                 <h2 class="task-card_title">冷4+3滾1 </h2>
-                                <button class="btn-icon-border-blue"><span>取消關聯</span></button>
+                                <button class="btn-icon-border-blue" data-bs-toggle="modal" data-bs-target="#cancel-relation"><span>取消關聯</span></button>
                             </div>
                         </div>
                         <div class="task-info">
@@ -557,7 +557,7 @@
                         <div class="task-card_head">
                             <div class="d-flex align-items-center justify-content-between">
                                 <h2 class="task-card_title">冷4+3滾1 </h2>
-                                <button class="btn-icon-border-blue"><span>取消關聯</span></button>
+                                <button class="btn-icon-border-blue" data-bs-toggle="modal" data-bs-target="#cancel-relation"><span>取消關聯</span></button>
                             </div>
                         </div>
                         <div class="task-info">
@@ -668,6 +668,23 @@
                 <div class="relationOrder_bottom">
                     <button class="btn-gradient">確認建立</button>
                 </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-manager" id="cancel-relation" tabindex="-1" aria-labelledby="cancel-relationLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="cancel-relationLabel">取消關聯</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>確定要取消關聯嗎？</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-gradient modal_confirmBtn">確定</button>
+                </div>
+              </div>
             </div>
         </div>
     </main>

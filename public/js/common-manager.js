@@ -104,3 +104,16 @@ $(".technician-select-area").change(function() {
         $(this).parents(".technician-select-wrap").find(".technician-south").addClass("active").siblings(".technician-select").removeClass("active");
     }
 })
+
+// 關聯搜尋、模糊搜尋
+$(".order-all-select").change(function() {
+    if($(this).val() == "關聯搜尋") {
+        $(".related-address").show();
+        $(".related-phoneid").show();
+        $(".blur-address").hide();
+    }else if($(this).val() == "模糊搜尋") {
+        $(".related-address").hide();
+        $(".related-phoneid").hide();
+        $(".blur-address").show();
+    }
+})
