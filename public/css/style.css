@@ -1337,14 +1337,15 @@ a:hover {
 }
 
 .table-common_func a {
-  text-decoration: underline;
-  color: #004F74;
+  text-decoration: underline !important;
+  color: #004F74 !important;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .table-common_func a:hover {
-  color: #735400;
+  color: #735400 !important;
 }
 
 .table-common_arrow {
@@ -4923,6 +4924,15 @@ body.dark-mode .strange-info {
 
 .detail_item-service.nomask::after {
   opacity: 0;
+}
+
+.detail_item.return-date .detail_item_title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.detail_item.return-date .detail_item_content {
+  font-size: 18px;
 }
 
 .detail_pic {

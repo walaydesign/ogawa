@@ -110,11 +110,15 @@
                     </div>
                 </div>
                 <div class="order_detail">
+                    <div class="detail_item d-flex return-date">
+                        <h2 class="detail_item_title">回報日期</h2>
+                        <p class="detail_item_content">2024/11/01</p>
+                    </div>
                     <div class="report-tag">未服務</div>
                     <div class="row">
                         <div class="col-4">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">品牌</h2>
+                                <h2 class="detail_item_title mb-1">品牌<span class="highlight">*</span></h2>
                                 <select name="" id="" class="detail_item_select w-100">
                                     <option value="">國際Panasonic</option>
                                 </select>
@@ -122,13 +126,13 @@
                         </div>
                         <div class="col-4">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">型號</h2>
+                                <h2 class="detail_item_title mb-1">型號<span class="highlight">*</span></h2>
                                 <input type="text" class="detail_item_input w-100" placeholder="請輸入" value="王大明">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">安裝位置</h2>
+                                <h2 class="detail_item_title mb-1">安裝位置<span class="highlight">*</span></h2>
                                 <input type="text" class="detail_item_input w-100" placeholder="請輸入" value="主臥">
                             </div>
                         </div>
@@ -220,53 +224,58 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="order_detail_devide">
-                        <div class="report-tag">返修</div>
-                        <div class="col-12">
-                            <div class="detail_item d-flex">
-                                <h2 class="detail_item_title">回報日期</h2>
-                                <p class="detail_item_content">2024/11/01</p>
+                    </div>
+                    <hr class="order_detail_devide">
+                    <div class="report-tag">返修</div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">是否返修<span class="highlight">*</span></h2>
+                                <select name="" id="" class="detail_item_select w-100 whethertorepair-edit" required>
+                                    <option value="是" selected>是</option>
+                                    <option value="否">否</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="strange-info">
-                                <div class="row mb-2">
-                                    <div class="col-4">
-                                        <div class="detail_item d-flex">
-                                            <h2 class="detail_item_title">返修時間</h2>
-                                            <p class="detail_item_content">2024/11/01</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="detail_item d-flex">
-                                            <h2 class="detail_item_title">申訴時間</h2>
-                                            <p class="detail_item_content">2024/11/01</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="detail_item d-flex">
-                                            <h2 class="detail_item_title">結案時間</h2>
-                                            <p class="detail_item_content">2024/11/01</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="detail_item">
-                                        <h2 class="detail_item_title mb-2">異常描述</h2>
-                                        <textarea name="" id="" class="detail_item_textarea w-100" value="關面活夠個：後照頭美都眾；理下在子期藝量權客才差於成機們兩備錯老系裡作半，對你分車難。"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="detail_item">
-                                        <h2 class="detail_item_title mb-2">異常返修</h2>
-                                        <textarea name="" id="" class="detail_item_textarea w-100" value="關面活夠個：後照頭美都眾；理下在子期藝量權客才差於成機們兩備錯老系裡作半，對你分車難。"></textarea>
-                                    </div>
-                                </div>
+                        <div class="col-4">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">再追蹤日<span class="highlight">*</span></h2>
+                                <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="follow-time" required>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">返修時間<span class="highlight">*</span></h2>
+                                <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="repair-time" required>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">申訴時間<span class="highlight">*</span></h2>
+                                <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="report-time" required>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">結案時間<span class="highlight">*</span></h2>
+                                <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="finish-time" required>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="detail_item">
-                                <h2 class="detail_item_title">客戶回報</h2>
+                                <h2 class="detail_item_title mb-2">異常描述</h2>
+                                <textarea name="" id="" class="detail_item_textarea w-100" value="關面活夠個：後照頭美都眾；理下在子期藝量權客才差於成機們兩備錯老系裡作半，對你分車難。"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-2">異常返修</h2>
+                                <textarea name="" id="" class="detail_item_textarea w-100" value="關面活夠個：後照頭美都眾；理下在子期藝量權客才差於成機們兩備錯老系裡作半，對你分車難。"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title">客戶回報<span class="highlight">*</span></h2>
                                 <div class="d-flex align-items-center order_detail_checkbox">
                                     <div class="d-flex align-items-center input-chechbox-wrap">
                                         <input type="checkbox" class="input-chechbox" id="water">
@@ -297,7 +306,7 @@
                         </div>
                         <div class="col-12">
                             <div class="detail_item">
-                                <h2 class="detail_item_title">檢測結果</h2>
+                                <h2 class="detail_item_title">檢測結果<span class="highlight">*</span></h2>
                                 <div class="d-flex align-items-center order_detail_checkbox">
                                     <div class="d-flex align-items-center input-chechbox-wrap">
                                         <input type="checkbox" class="input-chechbox" id="same">
@@ -316,7 +325,7 @@
                         </div>
                         <div class="col-12">
                             <div class="detail_item">
-                                <h2 class="detail_item_title">處理方案</h2>
+                                <h2 class="detail_item_title">處理方案<span class="highlight">*</span></h2>
                                 <div class="d-flex align-items-center order_detail_checkbox">
                                     <div class="checkbox-item">
                                         <input type="radio" id="solved" name="solution">
@@ -339,7 +348,7 @@
                         </div>
                         <div class="col-12">
                             <div class="detail_item">
-                                <h2 class="detail_item_title">費用</h2>
+                                <h2 class="detail_item_title">費用<span class="highlight">*</span></h2>
                                 <div class="d-flex align-items-center order_detail_checkbox">
                                     <div class="checkbox-item">
                                         <input type="radio" id="noprice" name="price">
@@ -377,7 +386,7 @@
                         <div class="col-12">
                             <div class="detail_item">
                                 <div class="d-flex align-items-center justify-content-between mb-1">
-                                    <h2 class="detail_item_title">機器照片<span class="highlight">*</span></h2>
+                                    <h2 class="detail_item_title">客戶提供</h2>
                                     <button class="btn-border-blue btn-upload">
                                         上傳
                                         <input type="file">
@@ -432,7 +441,7 @@
                         <div class="col-12">
                             <div class="detail_item">
                                 <div class="d-flex align-items-center justify-content-between mb-1">
-                                    <h2 class="detail_item_title">返修單照片</h2>
+                                    <h2 class="detail_item_title">返修單照片<span class="highlight">*</span></h2>
                                     <button class="btn-border-blue btn-upload">
                                         上傳
                                         <input type="file">
@@ -534,5 +543,21 @@
     <script src="../public/js/fullcalendar/main.js"></script>
     <script src="../public/js/jquery-ui/jquery-ui.min.js"></script>
     <script src="../public/js/common-manager.js"></script>
+
+    <script>
+        $( function() {
+            $( "#follow-time" ).datepicker();
+            $( "#repair-time" ).datepicker();
+            $( "#report-time" ).datepicker();
+            $( "#finish-time" ).datepicker();
+        } );
+        $(".whethertorepair-edit").change(function() {
+            if($(this).val() == "否") {
+                let url = "./order-edit-error-notdone-notrepair.html";
+                window.location.assign(url);
+            }
+        })
+    </script>
+
 </body>
 </html>

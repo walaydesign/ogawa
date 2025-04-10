@@ -163,7 +163,7 @@
                             <td>
                                 <div class="table-common_func d-flex align-items-center gap-3">
                                     <a href="./invoice-detail.html">查看</a>
-                                    <a href="">作廢</a>
+                                    <a data-bs-toggle="modal" data-bs-target="#delete-invoice">作廢</a>
                                 </div>
                             </td>
                         </tr>
@@ -177,7 +177,7 @@
                             <td>
                                 <div class="table-common_func d-flex align-items-center gap-3">
                                     <a href="./invoice-detail.html">查看</a>
-                                    <a href="">作廢</a>
+                                    <a data-bs-toggle="modal" data-bs-target="#delete-invoice">作廢</a>
                                 </div>
                             </td>
                         </tr>
@@ -191,7 +191,7 @@
                             <td>
                                 <div class="table-common_func d-flex align-items-center gap-3">
                                     <a href="./invoice-detail.html">查看</a>
-                                    <a href="">作廢</a>
+                                    <a data-bs-toggle="modal" data-bs-target="#delete-invoice">作廢</a>
                                 </div>
                             </td>
                         </tr>
@@ -205,7 +205,7 @@
                             <td>
                                 <div class="table-common_func d-flex align-items-center gap-3">
                                     <a href="./invoice-detail.html">查看</a>
-                                    <a href="">作廢</a>
+                                    <a data-bs-toggle="modal" data-bs-target="#delete-invoice">作廢</a>
                                 </div>
                             </td>
                         </tr>
@@ -219,7 +219,7 @@
                             <td>
                                 <div class="table-common_func d-flex align-items-center gap-3">
                                     <a href="./invoice-detail.html">查看</a>
-                                    <a href="">作廢</a>
+                                    <a data-bs-toggle="modal" data-bs-target="#delete-invoice">作廢</a>
                                 </div>
                             </td>
                         </tr>
@@ -233,7 +233,7 @@
                             <td>
                                 <div class="table-common_func d-flex align-items-center gap-3">
                                     <a href="./invoice-detail.html">查看</a>
-                                    <a href="">作廢</a>
+                                    <a data-bs-toggle="modal" data-bs-target="#delete-invoice">作廢</a>
                                 </div>
                             </td>
                         </tr>
@@ -247,7 +247,7 @@
                             <td>
                                 <div class="table-common_func d-flex align-items-center gap-3">
                                     <a href="./invoice-detail.html">查看</a>
-                                    <a href="">作廢</a>
+                                    <a data-bs-toggle="modal" data-bs-target="#delete-invoice">作廢</a>
                                 </div>
                             </td>
                         </tr>
@@ -277,6 +277,23 @@
             </div>
         </div>
     </main>
+
+    <div class="modal fade modal-manager" id="delete-invoice" tabindex="-1" aria-labelledby="delete-invoiceLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="delete-invoiceLabel">發票作廢</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>確定要作廢嗎？</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-gradient modal_confirmBtn">確定</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
     <script src="../public/js/jquery/jquery.min.js"></script>
     <script src="../public/js/bootstrap/bootstrap.bundle.min.js"></script>

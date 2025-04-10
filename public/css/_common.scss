@@ -1145,11 +1145,12 @@ a {
     }
     &_func {
         a {
-            text-decoration: underline;
-            color: $primary-900;
+            text-decoration: underline !important;
+            color: $primary-900 !important;
             transition: $transition;
+            cursor: pointer;
             &:hover {
-                color: $secondary-900;
+                color: $secondary-900 !important;
             }
         }
     }
