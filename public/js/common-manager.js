@@ -117,3 +117,48 @@ $(".order-all-select").change(function() {
         $(".blur-address").show();
     }
 })
+
+
+// 跑馬燈、公佈欄選擇技師
+$(".select-list .input-chechbox").change(function() {
+	
+
+    let list = $(this).parents(".select-list");
+    let selected = Array();
+    list.find(".input-chechbox").each(function() {
+        if($(this).is(':checked')) {
+            let val = $(this).val();
+            selected.push(val);
+        }
+    })
+
+    let showname = $(this).parents(".order-head_searchForm_select").find(".selected-people");
+    showname.text("");
+    let selectedLength = selected.length;
+    if(selectedLength > 0) {
+        for(var i=0; i<selectedLength;i++) {
+            let name = selected[i];
+            if(i > 0) {
+                showname.append("、" + name);
+            }else {
+                showname.append(name);
+            }
+        }
+    }else {
+        showname.text("請選擇");
+    }
+
+})
+
+
+$(".selected-people").click(function() {
+    console.log("click!!!");
+    $(this).parents(".order-head_searchForm_select").find(".select-list").slideToggle(300);
+})
+
+$(document).click(function (event) {
+    var selectList = $(".technician-select");
+    if (!selectList.is(event.target) && selectList.has(event.target).length === 0) {
+        $(".select-list").slideUp(300);
+    }
+});

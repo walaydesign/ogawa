@@ -110,12 +110,14 @@
                     </div>
                 </div>
                 <div class="order_detail">
-                    <div class="detail_item d-flex return-date">
-                        <h2 class="detail_item_title">回報日期</h2>
-                        <p class="detail_item_content">2024/11/01</p>
-                    </div>
                     <div class="report-tag">未服務</div>
                     <div class="row">
+                        <div class="col-12">
+                            <div class="detail_item d-flex">
+                                <h2 class="detail_item_title">回報日期</h2>
+                                <p class="detail_item_content">2024/11/01</p>
+                            </div>
+                        </div>
                         <div class="col-4">
                             <div class="detail_item">
                                 <h2 class="detail_item_title mb-1">品牌<span class="highlight">*</span></h2>
@@ -133,12 +135,14 @@
                         <div class="col-4">
                             <div class="detail_item">
                                 <h2 class="detail_item_title mb-1">安裝位置<span class="highlight">*</span></h2>
-                                <input type="text" class="detail_item_input w-100" placeholder="請輸入" value="主臥">
+                                <select name="" id="" class="detail_item_select w-100">
+                                    <option value="">主臥</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="detail_item">
-                                <h2 class="detail_item_title">未服務原因</h2>
+                                <h2 class="detail_item_title">未服務原因<span class="highlight">*</span></h2>
                                 <div class="d-flex align-items-center order_detail_checkbox">
                                     <div class="d-flex align-items-center input-chechbox-wrap">
                                         <input type="checkbox" class="input-chechbox" id="stuck">
@@ -229,8 +233,8 @@
                     <div class="report-tag">不返修</div>
                     <div class="row">
                         <div class="col-12">
-                            <div class="detail_item d-flex wider-title">
-                                <h2 class="detail_item_title">結案時間</h2>
+                            <div class="detail_item d-flex">
+                                <h2 class="detail_item_title">回報日期</h2>
                                 <p class="detail_item_content">2024/11/01</p>
                             </div>
                         </div>
@@ -238,8 +242,8 @@
                             <div class="detail_item">
                                 <h2 class="detail_item_title mb-1">是否返修<span class="highlight">*</span></h2>
                                 <select name="" id="" class="detail_item_select w-100 whethertorepair-edit" required>
-                                    <option value="是" selected>是</option>
-                                    <option value="否">否</option>
+                                    <option value="是">是</option>
+                                    <option value="否" selected>否</option>
                                 </select>
                             </div>
                         </div>
@@ -253,6 +257,24 @@
                             <div class="detail_item">
                                 <h2 class="detail_item_title mb-1">申訴時間<span class="highlight">*</span></h2>
                                 <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="report-time" required>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">結案時間</h2>
+                                <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="end-time" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-2">異常描述</h2>
+                                <textarea name="" id="" class="detail_item_textarea w-100" value="關面活夠個：後照頭美都眾；理下在子期藝量權客才差於成機們兩備錯老系裡作半，對你分車難。"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-2">異常返修</h2>
+                                <textarea name="" id="" class="detail_item_textarea w-100" value="關面活夠個：後照頭美都眾；理下在子期藝量權客才差於成機們兩備錯老系裡作半，對你分車難。"></textarea>
                             </div>
                         </div>
                         <div class="col-12">
@@ -288,7 +310,7 @@
                         </div>
                         <div class="col-12">
                             <div class="detail_item">
-                                <h2 class="detail_item_title">檢測結果<span class="highlight">*</span></h2>
+                                <h2 class="detail_item_title">溝通/檢測結果<span class="highlight">*</span></h2>
                                 <div class="d-flex align-items-center order_detail_checkbox">
                                     <div class="d-flex align-items-center input-chechbox-wrap">
                                         <input type="checkbox" class="input-chechbox" id="origin-inspect">
@@ -334,45 +356,9 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">客服意見/檢討<span class="highlight">*</span></h2>
-                                <textarea name="" id="" class="detail_item_textarea w-100" placeholder="請輸入"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="detail_item">
-                                <h2 class="detail_item_title mb-2">異常描述</h2>
-                                <textarea name="" id="" class="detail_item_textarea w-100" value="關面活夠個：後照頭美都眾；理下在子期藝量權客才差於成機們兩備錯老系裡作半，對你分車難。"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="detail_item">
-                                <h2 class="detail_item_title mb-2">異常返修</h2>
-                                <textarea name="" id="" class="detail_item_textarea w-100" value="關面活夠個：後照頭美都眾；理下在子期藝量權客才差於成機們兩備錯老系裡作半，對你分車難。"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">發生原因<span class="highlight">*</span></h2>
-                                <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea" required></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">造成影響<span class="highlight">*</span></h2>
-                                <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea" required></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="detail_item">
-                                <h2 class="detail_item_title mb-1">改善方式<span class="highlight">*</span></h2>
-                                <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea" required></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12">
                             <div class="order_detail_pic">
                                 <div class="d-flex align-items-center justify-content-between mb-1">
-                                    <h2 class="detail_item_title">客戶照片<span class="highlight">*</span></h2>
+                                    <h2 class="detail_item_title">客戶照片</h2>
                                     <button class="btn-border-blue btn-upload">
                                         上傳
                                         <input type="file">
@@ -421,6 +407,35 @@
                                             <img src="../public/img/x.svg" alt="">
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">客服意見/檢討<span class="highlight">*</span></h2>
+                                <textarea name="" id="" class="detail_item_textarea w-100" placeholder="請輸入"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="technician-return technician-return-edit">
+                        <h2 class="technician-return_title">技師回報</h2>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="detail_item">
+                                    <h2 class="detail_item_title mb-1">發生原因<span class="highlight">*</span></h2>
+                                    <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="detail_item">
+                                    <h2 class="detail_item_title mb-1">造成影響<span class="highlight">*</span></h2>
+                                    <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="detail_item">
+                                    <h2 class="detail_item_title mb-1">改善方式<span class="highlight">*</span></h2>
+                                    <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea" required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -479,6 +494,7 @@
         $( function() {
             $( "#report-time" ).datepicker();
             $( "#follow-time" ).datepicker();
+            $( "#end-time" ).datepicker();
         } );
         $(".whethertorepair-edit").change(function() {
             if($(this).val() == "是") {

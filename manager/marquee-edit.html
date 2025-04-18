@@ -108,66 +108,223 @@
                         <h1>小川好品質的秘訣</h1>
                     </div>
                 </div>
-                <div class="order-head_searchForm d-flex align-items-end statement_search">
-                    <div class="statement_search_form">
+                <div class="order-head_searchForm d-flex align-items-end announce_search">
+                    <div class="announce_search_form">
                         <label for="" class="order-head_searchForm_label">技師</label>
                         <div class="row technician-select-wrap">
                             <div class="col-6">
                                 <select name="" id="" class="order-head_searchForm_select technician-select-area">
                                     <option value="">請選擇</option>
-                                    <option value="北北基">北北基</option>
+                                    <option value="北北基" selected>北北基</option>
                                     <option value="桃竹苗">桃竹苗</option>
                                     <option value="中區">中區</option>
                                     <option value="南區">南區</option>
                                 </select>
                             </div>
                             <div class="col-6">
-                                <select name="" id="" class="order-head_searchForm_select technician-select technician-north active">
-                                    <option value="">請選擇</option>
-                                    <option value="">米</option>
-                                    <option value="">忠</option>
-                                    <option value="">鋒</option>
-                                    <option value="">簡</option>
-                                    <option value="">丞</option>
-                                    <option value="">潘</option>
-                                    <option value="">瀚</option>
-                                    <option value="">偉</option>
-                                    <option value="">保</option>
-                                    <option value="">忻</option>
-                                    <option value="">豪</option>
-                                    <option value="">蔡</option>
-                                    <option value="">源</option>
-                                </select>
-                                <select name="" id="" class="order-head_searchForm_select technician-select technician-taochumiao">
-                                    <option value="">請選擇</option>
-                                    <option value="">守</option>
-                                    <option value="">昌</option>
-                                    <option value="">生</option>
-                                    <option value="">銘</option>
-                                    <option value="">曄</option>
-                                    <option value="">傑</option>
-                                    <option value="">凡</option>
-                                </select>
-                                <select name="" id="" class="order-head_searchForm_select technician-select technician-middle">
-                                    <option value="">請選擇</option>
-                                    <option value="">達</option>
-                                    <option value="">田</option>
-                                    <option value="">旭</option>
-                                </select>
-                                <select name="" id="" class="order-head_searchForm_select technician-select technician-south">
-                                    <option value="">請選擇</option>
-                                    <option value="">連</option>
-                                    <option value="">憲</option>
-                                    <option value="">磬</option>
-                                    <option value="">宗</option>
-                                    <option value="">曹</option>
-                                    <option value="">晨</option>
-                                    <option value="">民</option>
-                                </select>
+                                <div class="order-head_searchForm_select technician-select technician-north active">
+                                    <div class="selected-people">請選擇</div>
+                                    <ul class="select-list">
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="mi" value="米">
+                                                <label for="mi">米</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="chong" value="忠">
+                                                <label for="chong">忠</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="fong" value="鋒">
+                                                <label for="fong">鋒</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="chien" value="簡">
+                                                <label for="chien">簡</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="cheng" value="丞">
+                                                <label for="cheng">丞</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="pan" value="潘">
+                                                <label for="pan">潘</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="han" value="瀚">
+                                                <label for="han">瀚</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="wei" value="偉">
+                                                <label for="wei">偉</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="bao" value="保">
+                                                <label for="bao">保</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="shin" value="忻">
+                                                <label for="shin">忻</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="hao" value="豪">
+                                                <label for="hao">豪</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="tsai" value="蔡">
+                                                <label for="tsai">蔡</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="yuan" value="源">
+                                                <label for="yuan">源</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order-head_searchForm_select technician-select technician-taochumiao">
+                                    <div class="selected-people">請選擇</div>
+                                    <ul class="select-list">
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="shoa" value="守">
+                                                <label for="shoa">守</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="chang" value="昌">
+                                                <label for="chang">昌</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="shen" value="生">
+                                                <label for="shen">生</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="ming" value="銘">
+                                                <label for="ming">銘</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="yie" value="曄">
+                                                <label for="yie">曄</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="je" value="傑">
+                                                <label for="je">傑</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="fan" value="凡">
+                                                <label for="fan">凡</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order-head_searchForm_select technician-select technician-middle">
+                                    <div class="selected-people">請選擇</div>
+                                    <ul class="select-list">
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="da" value="達">
+                                                <label for="da">達</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="tien" value="田">
+                                                <label for="tien">田</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="shu" value="旭">
+                                                <label for="shu">旭</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="order-head_searchForm_select technician-select technician-south">
+                                    <div class="selected-people">請選擇</div>
+                                    <ul class="select-list">
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="lien" value="連">
+                                                <label for="lien">連</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="shien" value="憲">
+                                                <label for="shien">憲</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="ching" value="磬">
+                                                <label for="ching">磬</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="zhong" value="宗">
+                                                <label for="zhong">宗</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="chao" value="曹">
+                                                <label for="chao">曹</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="chengg" value="晨">
+                                                <label for="chengg">晨</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex align-items-center input-chechbox-wrap">
+                                                <input type="checkbox" class="input-chechbox" id="min" value="民">
+                                                <label for="min">民</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="btn-bg-blue ms-auto d-block mb-1">搜尋</button>
                 </div>
                 <div class="order_detail">
                     <div class="row">

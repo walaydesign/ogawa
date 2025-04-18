@@ -1283,5 +1283,23 @@ a {
     }
 }
 
+.technician-return {
+    padding: 30px 25px 20px;
+    border-radius: 30px;
+    &_title {
+        font-size: 20px;
+        font-weight: 700;
+        color: $secondary-800;
+        margin-bottom: 23px;
+    }
+    &-detail {
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+    }
+    &-edit {
+        background-color: $third-50;
+    }
+}
+
 
 

@@ -258,6 +258,14 @@
                 }
             }
         }
+        &.single {
+            padding: 0 !important;
+            margin: 0 !important;
+            border: 0 !important;
+            li {
+                margin: 0 !important;
+            }
+        }
     }
     &-info {
         &_item {
