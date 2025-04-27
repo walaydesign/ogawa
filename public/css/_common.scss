@@ -1142,6 +1142,9 @@ a {
                 background-color: $report-lightred;
             }
         }
+        .status-fail {
+            color: $red;
+        }
     }
     &_func {
         a {

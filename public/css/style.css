@@ -1336,6 +1336,10 @@ a:hover {
   background-color: #F9E7E7;
 }
 
+.table-common_content .status-fail {
+  color: #E30A0A;
+}
+
 .table-common_func a {
   text-decoration: underline !important;
   color: #004F74 !important;
@@ -6232,6 +6236,30 @@ body.dark-mode .strange-info {
   width: auto;
 }
 
+.modal-invoice .detail_item {
+  margin-bottom: 15px;
+}
+
+.modal-invoice .detail_item_title {
+  text-align: left;
+}
+
+.modal-invoice .modal-dialog {
+  max-width: 400px;
+}
+
+.modal-invoice .modal-body {
+  padding-bottom: 0;
+}
+
+.modal-invoice .invoice-info {
+  display: none;
+}
+
+.modal-invoice .invoice-info.active {
+  display: block;
+}
+
 .statistics_filter {
   background-color: #ECF0F2;
   padding: 20px;
@@ -6468,7 +6496,7 @@ body.dark-mode .strange-info {
 }
 
 .statement_data_client {
-  gap: 15px;
+  gap: 12px;
 }
 
 .statement_data_client > div {
@@ -6477,22 +6505,11 @@ body.dark-mode .strange-info {
 }
 
 .statement_data_client .statement_data_item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 15px 10px 5px;
 }
 
-.statement_data_client .statement_data_item p {
-  margin: 0;
-  text-align: center;
-  color: #004F74;
-  font-weight: 500;
+.statement_data_client .statement_data_title {
+  font-size: 12px;
 }
 
 .statement_table .table-common {

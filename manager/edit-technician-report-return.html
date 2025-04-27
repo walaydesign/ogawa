@@ -110,16 +110,22 @@
                 </div>
                 <div class="order_detail">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-4">
                             <div class="detail_item">
                                 <h2 class="detail_item_title mb-1">申訴時間<span class="highlight">*</span></h2>
                                 <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="report-time">
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4">
                             <div class="detail_item">
                                 <h2 class="detail_item_title mb-1">結案時間</h2>
                                 <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="end-time">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="detail_item">
+                                <h2 class="detail_item_title mb-1">再追蹤日</h2>
+                                <input type="text" class="detail_item_input w-100 input-datepick" placeholder="請輸入" id="follow-time">
                             </div>
                         </div>
                         <div class="col-12">
@@ -264,6 +270,12 @@
                             <h2 class="technician-return_title">技師回報</h2>
                             <div>
                                 <div class="col-12">
+                                    <div class="detail_item d-flex">
+                                        <h2 class="detail_item_title">回報時間</h2>
+                                        <p class="detail_item_content">2024/10/11</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
                                     <div class="detail_item">
                                         <h2 class="detail_item_title mb-1">發生原因<span class="highlight">*</span></h2>
                                         <textarea name="" id="" placeholder="請輸入" class="detail_item_textarea" required></textarea>
@@ -338,6 +350,7 @@
         $( function() {
             $( "#report-time" ).datepicker();
             $( "#end-time" ).datepicker();
+            $( "#follow-time" ).datepicker();
         } );
     </script>
 </body>

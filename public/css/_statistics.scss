@@ -190,20 +190,17 @@
             color: $gray-800;
         }
         &_client {
-            gap: 15px;
+            gap: 12px;
             >div {
                 width: calc((100% - 60px) / 5);
                 padding: 0;
             }
-            .statement_data_item {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                p {
-                    margin: 0;
-                    text-align: center;
-                    color: $primary-900;
-                    font-weight: 500;
+            .statement_data {
+                &_item {
+                    padding: 15px 10px 5px;
+                }
+                &_title {
+                    font-size: 12px;
                 }
             }
         }

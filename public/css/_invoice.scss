@@ -25,3 +25,25 @@
     }
 }
 
+.modal-invoice {
+    .detail_item {
+        margin-bottom: 15px;
+        &_title {
+            text-align: left;
+        }
+    }
+    .modal {
+        &-dialog {
+            max-width: 400px;
+        }
+        &-body {
+            padding-bottom: 0;
+        }
+    }
+    .invoice-info {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}
